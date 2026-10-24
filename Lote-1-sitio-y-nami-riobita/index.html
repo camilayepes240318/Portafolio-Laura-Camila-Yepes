@@ -1,0 +1,1629 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Laura Camila Yepes Gutiérrez · Portafolio">
+<meta property="og:description" content="Marketing y Comunicaciones · Estrategia Digital. Contenidos, pauta, generación de leads y desarrollo de canales.">
+<meta property="og:image" content="assets/laura-camila-yepes.webp">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary">
+<!-- PENDIENTE: cuando tengas dominio, agrega <link rel="canonical" href="..."> y usa una URL absoluta en og:image -->
+<title>Laura Camila Yepes Gutiérrez · Marketing y Comunicaciones</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Portafolio de Laura Camila Yepes Gutiérrez: marketing y comunicaciones, estrategia digital, contenidos, pauta, generación de leads y desarrollo de canales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Outfit:wght@200;300;400;500;600&display=swap">
+<style>
+/* Layout: paneles de vidrio esmerilado sobre un fondo lavanda con luz difusa; cada sección es un panel con su encabezado en mayúsculas condensadas, siguiendo la pieza de referencia aprobada. */
+:root{
+  /* Paleta tomada de la referencia */
+  --lavanda:#E4E0F8;
+  --lila:#CFC8F4;
+  --pervinca:#AEB6F2;
+  --violeta:#5B4BD1;
+  --violeta-claro:#8C7DEB;
+  --indigo:#2E2A78;
+  --texto:#36336B;
+  --suave:#5C5990;
+  --blanco:#FFFFFF;
+  --borde-vidrio:rgba(255,255,255,.78);
+  --linea:rgba(46,42,120,.13);
+  --pendiente:#7A3FB8;
+  /* Tipografía */
+  --f-titulo:"Barlow Semi Condensed", "Arial Narrow", "Roboto Condensed", Arial, sans-serif;
+  --f-texto:"Outfit", "Segoe UI", Roboto, Arial, sans-serif;
+  /* Escala */
+  --t-xs:.72rem; --t-s:.88rem; --t-m:1rem; --t-l:1.2rem;
+  --t-xl:clamp(1.5rem,1.15rem + 1.3vw,2.1rem);
+  --t-2xl:clamp(2.1rem,1.4rem + 2.8vw,3.4rem);
+  --t-gigante:clamp(2.4rem,10.4vw,10rem);
+  --gutter:clamp(16px,3.5vw,44px);
+  --maxw:1220px;
+  --radio:26px;
+  --sombra:0 18px 50px -22px rgba(64,48,170,.38);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--lavanda);color:var(--texto);font-family:var(--f-texto);font-size:var(--t-m);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--lavanda)}
+h1,h2,h3,h4{font-family:var(--f-titulo);color:var(--indigo);margin:0;line-height:1.05;text-wrap:balance;font-weight:600;letter-spacing:.01em}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+strong,b{font-weight:500}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-left:max(var(--gutter), env(safe-area-inset-left,0px));padding-right:max(var(--gutter), env(safe-area-inset-right,0px))}
+.etiqueta{font-family:var(--f-texto);font-size:var(--t-xs);letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+:focus-visible{outline:3px solid var(--violeta);outline-offset:3px;border-radius:8px}
+.saltar{position:absolute;left:16px;top:-60px;background:var(--violeta);color:#fff;padding:10px 16px;border-radius:999px;font-weight:500;z-index:100;text-decoration:none}
+.saltar:focus{top:calc(12px + env(safe-area-inset-top,0px))}
+
+/* Fondo de luz difusa */
+.fondo{position:fixed;inset:0;z-index:-1;overflow:hidden;background:
+  radial-gradient(60vw 60vw at 85% 8%, rgba(174,182,242,.85), transparent 60%),
+  radial-gradient(55vw 55vw at 5% 35%, rgba(207,200,244,.95), transparent 62%),
+  radial-gradient(60vw 50vw at 70% 75%, rgba(185,170,245,.7), transparent 60%),
+  radial-gradient(50vw 50vw at 15% 100%, rgba(174,182,242,.6), transparent 60%),
+  linear-gradient(160deg,#EEEBFB 0%,#DCD7F6 45%,#D2D3F6 100%)}
+.fondo::before,.fondo::after{content:"";position:absolute;border-radius:50%;border:22px solid rgba(255,255,255,.22)}
+.fondo::before{width:70vw;height:70vw;right:-30vw;top:30vh}
+.fondo::after{width:46vw;height:46vw;left:-20vw;top:60vh;border-width:14px;border-color:rgba(255,255,255,.2)}
+
+/* Vidrio */
+.vidrio{position:relative;background:linear-gradient(140deg,rgba(255,255,255,.62),rgba(255,255,255,.26));border:1px solid var(--borde-vidrio);border-radius:var(--radio);box-shadow:var(--sombra), inset 0 1px 0 rgba(255,255,255,.9);-webkit-backdrop-filter:blur(18px) saturate(150%);backdrop-filter:blur(18px) saturate(150%)}
+.esfera{position:absolute;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.95), rgba(255,255,255,.25) 28%, rgba(140,125,235,.35) 62%, rgba(91,75,209,.55) 100%);box-shadow:inset -6px -10px 18px rgba(91,75,209,.35), 0 10px 24px -8px rgba(91,75,209,.4)}
+
+/* Marcador de dato pendiente (busca data-pendiente en el código) */
+.pendiente{display:inline;font-size:.82em;font-weight:500;color:var(--pendiente);background:rgba(122,63,184,.08);border:1px dashed rgba(122,63,184,.5);border-radius:6px;padding:.05em .45em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.pendiente::before{content:"";display:inline-block;width:.45em;height:.45em;border-radius:50%;background:currentColor;margin-right:.4em;vertical-align:.08em}
+
+/* Botones de vidrio */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:13px 22px;border-radius:16px;font:500 var(--t-xs)/1 var(--f-texto);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--indigo);background:linear-gradient(140deg,rgba(255,255,255,.75),rgba(255,255,255,.35));border:1px solid var(--borde-vidrio);box-shadow:0 10px 26px -14px rgba(64,48,170,.5), inset 0 1px 0 #fff;cursor:pointer;transition:transform .25s ease, box-shadow .25s ease, background .25s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px -14px rgba(64,48,170,.6), inset 0 1px 0 #fff;background:linear-gradient(140deg,#fff,rgba(255,255,255,.55))}
+.btn svg{width:16px;height:16px;flex:none;transition:transform .25s}
+.btn:hover svg{transform:translateX(3px)}
+.btn-lleno{color:#fff;background:linear-gradient(135deg,#6E5FE0,#4A3DBE);border-color:rgba(255,255,255,.4)}
+.btn-lleno:hover{background:linear-gradient(135deg,#7D6FEA,#5446C8)}
+
+/* ---------- Encabezado ---------- */
+.cabecera{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;padding-block:12px}
+.barra{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 10px 8px 16px;border-radius:20px}
+.marca{display:flex;align-items:center;gap:10px;white-space:nowrap;text-decoration:none;font-family:var(--f-titulo);font-weight:600;font-size:1.05rem;letter-spacing:.04em;text-transform:uppercase;color:var(--indigo)}
+.monograma{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-texto);font-weight:200;font-size:.95rem;letter-spacing:.02em;color:var(--violeta);background:radial-gradient(circle at 30% 25%,#fff,rgba(255,255,255,.4));border:1px solid var(--borde-vidrio)}
+.nav{display:flex;align-items:center;gap:2px}
+.nav a{font-size:var(--t-s);font-weight:400;text-decoration:none;padding:9px 13px;border-radius:12px;color:var(--suave);transition:background .2s,color .2s}
+.nav a:hover{background:rgba(255,255,255,.6);color:var(--indigo)}
+.nav a.activo{color:var(--violeta);font-weight:500}
+.nav a.nav-cta{margin-left:6px;padding:11px 16px;color:#fff}
+.menu-btn{display:none;padding:10px 14px}
+@media (max-width:920px){
+  .menu-btn{display:inline-flex}
+  .marca{font-size:.95rem}
+  .nav{position:absolute;left:max(var(--gutter), env(safe-area-inset-left,0px));right:max(var(--gutter), env(safe-area-inset-right,0px));top:calc(100% - 4px);flex-direction:column;align-items:stretch;padding:10px;border-radius:20px;background:rgba(245,243,253,.97);border:1px solid var(--borde-vidrio);box-shadow:var(--sombra)}
+  .nav a{padding:13px 14px;font-size:var(--t-m)}
+  .nav a.nav-cta{margin:6px 0 0;justify-content:center}
+  .cabecera:not(.abierta) .nav{display:none}
+}
+
+main{display:grid;gap:clamp(18px,2.4vw,28px);padding-bottom:clamp(24px,4vw,48px)}
+.panel{padding:clamp(22px,3.2vw,44px)}
+.panel-cab{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:clamp(20px,2.6vw,32px)}
+.titulo-seccion{font-size:var(--t-xl);text-transform:uppercase;letter-spacing:.04em;font-weight:600;color:var(--indigo);display:flex;align-items:center;gap:12px}
+.chispa{width:14px;height:14px;flex:none;color:var(--violeta-claro)}
+.sub{color:var(--suave);max-width:46ch;font-size:var(--t-s)}
+
+/* ---------- Portada ---------- */
+.portada{--pb:clamp(24px,3vw,40px);--px:clamp(20px,3vw,40px);padding:clamp(20px,2.6vw,32px) var(--px) var(--pb);overflow:hidden}
+.portada-top{display:flex;justify-content:space-between;gap:12px;color:var(--suave);margin-bottom:6px;position:relative;z-index:1}
+.palabra{position:relative;z-index:1;font-family:var(--f-texto);font-weight:500;font-size:var(--t-gigante);line-height:.82;letter-spacing:.01em;text-transform:uppercase;margin:0 0 -.05em -.04em;background:linear-gradient(180deg,rgba(91,75,209,.88) 0%,rgba(140,125,235,.55) 60%,rgba(174,182,242,.25) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none;white-space:nowrap}
+.portada-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(18px,2.6vw,32px);align-items:end;position:relative}
+.portada-texto{position:relative;z-index:3;padding-bottom:clamp(8px,1.5vw,20px)}
+.saludo{font-size:var(--t-l);color:var(--indigo);font-weight:300;margin-bottom:6px}
+.nombre{font-size:clamp(2.2rem,1.2rem + 3vw,3.6rem);text-transform:uppercase;line-height:.98;letter-spacing:.005em;font-weight:600;background:linear-gradient(120deg,#4A3DBE,#7C6DE6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.rol{margin-top:14px;font-size:var(--t-s);letter-spacing:.12em;text-transform:uppercase;color:var(--suave);font-weight:400;line-height:1.5}
+.lede{margin-top:16px;color:var(--texto);max-width:36ch}
+.acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+/* Foto: pegada al borde derecho e inferior del panel; la cabeza sube sobre la palabra */
+.foto-wrap{position:relative;z-index:2;justify-self:end;align-self:end;width:min(calc(100% + var(--px)),450px);max-width:none;margin-right:calc(var(--px) * -1);margin-bottom:calc(var(--pb) * -1);margin-top:clamp(-220px,-15vw,-80px)}
+.foto-burbuja{position:absolute;left:50%;top:2%;width:92%;aspect-ratio:1/1;transform:translateX(-50%);border-radius:50%;
+  background:
+    radial-gradient(circle at 30% 24%, rgba(255,255,255,.75) 0, rgba(255,255,255,0) 18%),
+    radial-gradient(circle at 50% 52%, rgba(160,148,240,.10) 0%, rgba(140,125,235,.22) 52%, rgba(110,95,224,.42) 80%, rgba(206,198,250,.65) 96%, rgba(255,255,255,.75) 100%);
+  border:1.5px solid rgba(255,255,255,.65);
+  box-shadow:inset 0 0 60px rgba(255,255,255,.35), inset -24px -36px 70px rgba(91,75,209,.32), 0 30px 80px -30px rgba(74,61,190,.55)}
+.foto-burbuja::after{content:"";position:absolute;inset:6%;border-radius:50%;border:1px solid rgba(255,255,255,.35);border-left-color:transparent;border-bottom-color:transparent;transform:rotate(-20deg)}
+.foto{position:relative;width:100%;height:auto;aspect-ratio:2/3;display:block}
+.filosofia{position:absolute;z-index:4;right:clamp(300px,26vw,350px);bottom:clamp(8px,1.5vw,20px);width:260px;padding:18px 20px;display:flex;flex-direction:column;gap:8px;background:linear-gradient(140deg,rgba(255,255,255,.86),rgba(255,255,255,.62))}
+.filosofia h2{font-size:1.02rem;text-transform:uppercase;letter-spacing:.06em;display:flex;justify-content:space-between;gap:10px}
+.orbitas{position:relative;height:56px}
+.orbitas .esfera{width:38px;height:38px;left:50%;top:50%;transform:translate(-50%,-50%)}
+.orbitas i{position:absolute;left:50%;top:50%;width:76px;height:30px;border:1px solid rgba(91,75,209,.35);border-radius:50%;transform:translate(-50%,-50%) rotate(-18deg)}
+.orbitas i+i{transform:translate(-50%,-50%) rotate(28deg);width:66px}
+.filosofia p{font-size:1rem;color:var(--indigo);line-height:1.5;font-weight:400}
+.filosofia a{align-self:flex-end;color:var(--violeta)}
+.filosofia a svg{width:20px;height:20px}
+@media (max-width:980px){
+  /* Vista angosta: nombre e información al lado de la foto; la foto sigue pegada al margen derecho */
+  .portada-grid{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);grid-template-rows:1fr auto auto auto;grid-template-areas:"vacio foto" "saludo foto" "nombre foto" "rol foto" "lede lede" "acciones acciones" "filo filo";column-gap:10px;row-gap:0;align-items:end}
+  .portada-texto{display:contents}
+  .saludo{grid-area:saludo;margin-bottom:4px}
+  .nombre{grid-area:nombre;font-size:clamp(1.3rem,.55rem + 3.6vw,2.6rem);position:relative;z-index:3}
+  .rol{grid-area:rol;margin-top:10px;padding-bottom:14px;font-size:clamp(.66rem,.6rem + .4vw,.85rem)}
+  .lede{grid-area:lede;margin-top:14px}
+  .acciones{grid-area:acciones;margin-top:18px}
+  .foto-wrap{grid-area:foto;width:calc(100% + var(--px));max-width:380px;margin-top:clamp(-90px,-14vw,-48px);margin-bottom:0;-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 99%);mask-image:linear-gradient(180deg,#000 72%,transparent 99%)}
+  .foto-wrap .esfera.flota{width:28px!important;height:28px!important}
+  .filosofia{grid-area:filo;position:relative;right:auto;bottom:auto;width:auto;margin-top:20px}
+}
+@media (max-width:400px){.marca{font-size:.84rem;gap:8px}.monograma{width:30px;height:30px}.menu-btn{padding:9px 12px}}
+@media (min-width:600px) and (max-width:980px){
+  .portada-grid{grid-template-rows:1fr auto auto auto auto auto;grid-template-areas:"vacio foto" "saludo foto" "nombre foto" "rol foto" "lede foto" "acciones foto" "filo filo"}
+  .lede{margin-top:6px}
+  .acciones{margin-top:16px;padding-bottom:24px}
+  .rol{padding-bottom:0}
+}
+}
+/* ---------- Perfil ---------- */
+.perfil-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(22px,4vw,56px)}
+.titular{font-size:var(--t-2xl);text-transform:uppercase;font-weight:600;line-height:1;letter-spacing:.005em;max-width:20ch}
+.titular em{font-style:normal;background:linear-gradient(120deg,#4A3DBE,#8C7DEB);-webkit-background-clip:text;background-clip:text;color:transparent}
+.texto{margin-top:20px;max-width:62ch}
+.texto p+p{margin-top:.9em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{font-size:var(--t-xs);letter-spacing:.1em;text-transform:uppercase;font-weight:500;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.55);border:1px solid var(--borde-vidrio);color:var(--indigo)}
+.fortalezas{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.fortalezas li{padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.4);border:1px solid rgba(255,255,255,.7)}
+.fortalezas strong{display:block;font-family:var(--f-titulo);font-size:1.12rem;font-weight:600;text-transform:uppercase;letter-spacing:.03em;color:var(--indigo)}
+.fortalezas span{font-size:var(--t-s);color:var(--suave)}
+.problemas{margin-top:clamp(22px,3vw,34px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.problema{padding:18px;border-radius:18px;background:rgba(255,255,255,.3);border:1px dashed rgba(91,75,209,.35)}
+.problema .etiqueta{color:var(--violeta)}
+.problema strong{display:block;margin-top:6px;color:var(--indigo);font-weight:500}
+.problema p{font-size:var(--t-s);color:var(--suave);margin-top:4px}
+@media (max-width:860px){.perfil-grid,.problemas{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- Capacidades y proceso ---------- */
+.capproc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(22px,3vw,44px)}
+.subtitulo{font-family:var(--f-titulo);font-size:var(--t-l);text-transform:uppercase;letter-spacing:.06em;color:var(--indigo);margin-bottom:18px}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.tile{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:16px;border-radius:20px;background:rgba(255,255,255,.4);border:1px solid rgba(255,255,255,.75);min-width:0;transition:background .25s}
+.tile:hover{background:rgba(255,255,255,.6)}
+.icono{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(140deg,rgba(255,255,255,.95),rgba(255,255,255,.4));border:1px solid #fff;box-shadow:0 8px 18px -10px rgba(64,48,170,.5);color:var(--violeta);flex:none}
+.icono svg{width:22px;height:22px}
+.tile h4{font-size:1.02rem;text-transform:uppercase;letter-spacing:.03em}
+.tile ul{list-style:none;margin:0;padding:0;font-size:var(--t-s);color:var(--suave);display:grid;gap:3px;line-height:1.4}
+.tile .evid{margin-top:auto;display:flex;flex-wrap:wrap;gap:5px}
+.tile .evid a{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;text-decoration:none;padding:4px 8px;border-radius:999px;border:1px solid rgba(91,75,209,.3);color:var(--violeta)}
+.tile .evid a:hover{background:var(--violeta);color:#fff}
+.proceso{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.paso{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;position:relative}
+.paso:not(:last-child)::after{content:"›";position:absolute;right:-12px;top:28px;color:var(--violeta-claro);font-size:1.4rem;line-height:1}
+.burbuja{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;color:#fff;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.9),rgba(255,255,255,.2) 30%,rgba(140,125,235,.6) 70%,rgba(91,75,209,.85));border:1px solid rgba(255,255,255,.9);box-shadow:inset -4px -8px 14px rgba(74,61,190,.4), 0 12px 24px -12px rgba(74,61,190,.6)}
+.burbuja svg{width:28px;height:28px}
+.paso .num{font-weight:300;color:var(--suave);font-size:var(--t-s)}
+.paso h4{font-size:1rem;text-transform:uppercase;letter-spacing:.06em}
+.paso p{font-size:.8rem;color:var(--suave);line-height:1.45}
+.proceso-nota{margin-top:18px;font-size:var(--t-s);color:var(--suave)}
+@media (max-width:980px){.capproc{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.proceso{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}.paso:nth-child(2)::after{display:none}}
+
+/* ---------- Proyectos ---------- */
+.proyectos-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:18px}
+.proyectos-intro{display:flex;flex-direction:column;gap:16px;justify-content:space-between;padding:6px 4px}
+.leyenda{display:grid;gap:8px}
+.estado{display:inline-flex;align-items:center;gap:7px;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;white-space:nowrap;color:var(--texto)}
+.estado i{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.estado.implementado i{background:#2E9E7A}
+.estado.propio i{background:var(--violeta)}
+.estado.creacion i{background:#C98A2E}
+.estado.reportado i{background:#B04FC9}
+.tarjetas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tarjeta{display:flex;flex-direction:column;gap:14px;padding:14px;border-radius:24px;text-decoration:none;transition:transform .3s ease, box-shadow .3s ease}
+.tarjeta:hover{transform:translateY(-4px);box-shadow:0 26px 54px -24px rgba(64,48,170,.55), inset 0 1px 0 #fff}
+.miniatura{aspect-ratio:16/10;max-width:100%;border-radius:16px;overflow:hidden;position:relative;display:flex;align-items:flex-end;padding:16px}
+.miniatura svg{position:absolute;inset:0;width:100%;height:100%}
+.miniatura .m-nombre{position:relative;font-family:var(--f-titulo);font-weight:600;text-transform:uppercase;font-size:clamp(1.5rem,1rem + 1.6vw,2.2rem);line-height:.95;letter-spacing:.02em}
+.mi-ifcaya{background:#12302A;color:#fff}
+.miniatura img.mi-foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.miniatura .velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,40,.05) 35%,rgba(10,20,40,.7))}
+.mi-cneutral{background:#1C2F4E;color:#fff}
+.mi-nami{background:#0B0B0C;color:#fff}
+.mi-riobita{background:radial-gradient(circle at 50% 45%,#FFFBF2,#F3E6CC);justify-content:center;align-items:center}
+.miniatura img.mi-logo{position:relative;height:88%;width:auto;max-width:90%;object-fit:contain}
+.t-cuerpo{padding:0 6px 4px;display:flex;flex-direction:column;gap:8px;flex:1}
+.t-num{display:flex;align-items:center;gap:10px;font-family:var(--f-titulo);font-size:1.15rem;text-transform:uppercase;letter-spacing:.04em;color:var(--indigo);font-weight:500}
+.t-num span{display:inline-grid;place-items:center;min-width:32px;height:24px;padding:0 6px;border:1px solid rgba(91,75,209,.4);border-radius:8px;font-family:var(--f-texto);font-size:.8rem;font-weight:300;color:var(--violeta)}
+.t-cuerpo p{font-size:var(--t-s);color:var(--suave);line-height:1.5}
+.t-pie{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding-top:8px}
+.pastilla{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.65);border:1px solid #fff;color:var(--indigo);white-space:nowrap}
+.ver{display:inline-flex;align-items:center;gap:6px;font-size:var(--t-xs);letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--violeta)}
+.ver svg{width:15px;height:15px;transition:transform .25s}
+.tarjeta:hover .ver svg{transform:translateX(3px)}
+@media (max-width:980px){.proyectos-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:620px){.tarjetas{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- Casos ---------- */
+.caso{padding:clamp(22px,3.4vw,48px)}
+.caso-cab{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 32px;align-items:end;margin-bottom:clamp(24px,3vw,40px)}
+.caso-cab .etiqueta{color:var(--suave);display:block;margin-bottom:10px}
+.caso-titulo{font-size:var(--t-2xl);text-transform:uppercase;letter-spacing:.01em}
+.caso-sub{margin-top:10px;font-size:var(--t-l);color:var(--suave);max-width:48ch;line-height:1.45}
+.caso-estados{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.caso-cuerpo{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(22px,4vw,56px)}
+.ficha{align-self:start;position:sticky;top:100px;padding:6px 18px;border-radius:20px;background:rgba(255,255,255,.45);border:1px solid rgba(255,255,255,.8)}
+.ficha dl{margin:0}
+.ficha div{padding-block:12px;border-bottom:1px solid var(--linea)}
+.ficha div:last-child{border-bottom:0}
+.ficha dt{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--suave);font-weight:500;margin-bottom:3px}
+.ficha dd{margin:0;font-size:var(--t-s);font-weight:400;color:var(--indigo)}
+.ficha dd a{display:inline-flex;align-items:center;gap:5px;text-decoration:none;color:var(--violeta);font-weight:500;margin:0 12px 4px 0;border-bottom:1px solid rgba(91,75,209,.3)}
+.ficha dd a:hover{border-color:var(--violeta)}
+.ficha dd a svg{width:11px;height:11px}
+.relato{display:grid;gap:clamp(24px,3vw,36px);min-width:0}
+.bloque{min-width:0}
+.bloque h3{font-family:var(--f-texto);font-size:var(--t-xs);font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--violeta);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.bloque h3::after{content:"";flex:1;height:1px;background:var(--linea)}
+.bloque p{max-width:64ch}
+.bloque p+p{margin-top:.9em}
+.destacado{font-family:var(--f-titulo);font-size:var(--t-xl);text-transform:uppercase;font-weight:500;line-height:1.1;color:var(--indigo);max-width:30ch}
+ul.aportes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 22px}
+ul.aportes li{padding:9px 0 9px 24px;border-bottom:1px solid var(--linea);position:relative;font-size:var(--t-s)}
+ul.aportes li::before{content:"";position:absolute;left:0;top:1em;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--violeta-claro))}
+@media (max-width:640px){ul.aportes{grid-template-columns:minmax(0,1fr)}}
+.advertencia{font-size:var(--t-xs);color:var(--suave);margin-top:12px;max-width:66ch;letter-spacing:.02em}
+.volver{margin-top:clamp(24px,3vw,36px)}
+.volver svg{transform:scaleX(-1)}
+.volver:hover svg{transform:scaleX(-1) translateX(3px)}
+@media (max-width:900px){.caso-cuerpo{grid-template-columns:minmax(0,1fr)}.ficha{position:static}.caso-cab{grid-template-columns:minmax(0,1fr)}}
+
+.galeria{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.marco{border:1.5px dashed rgba(91,75,209,.4);border-radius:16px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.35) 0 10px,rgba(255,255,255,.12) 10px 20px);display:flex;flex-direction:column;justify-content:space-between;padding:12px;max-width:100%}
+.marco.v45{aspect-ratio:4/5}.marco.v916{aspect-ratio:9/16}.marco.h169{aspect-ratio:16/9;grid-column:span 2}.marco.cuad{aspect-ratio:1/1}
+.marco .etiqueta{color:var(--pendiente);font-size:.64rem}
+.marco p{font-size:var(--t-xs);color:var(--suave);line-height:1.4}
+.galeria-nota{font-size:var(--t-xs);color:var(--suave);margin-top:10px}
+@media (max-width:640px){.galeria{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.ecosistema{border-radius:20px;background:rgba(255,255,255,.55);border:1px solid #fff;padding:clamp(14px,2vw,24px);overflow-x:auto;margin:18px 0 0}
+.ecosistema svg{width:100%;min-width:560px;height:auto;display:block}
+.ecosistema figcaption{font-size:var(--t-xs);color:var(--suave);margin-top:10px}
+
+.metricas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.metrica{padding:clamp(18px,2.4vw,26px);border-radius:20px;color:#fff;background:linear-gradient(140deg,#6E5FE0,#3E33A8);border:1px solid rgba(255,255,255,.45);box-shadow:0 18px 36px -18px rgba(62,51,168,.7)}
+.metrica b{display:block;font-weight:300;font-size:clamp(2.6rem,1.6rem + 3vw,4rem);line-height:1;font-variant-numeric:tabular-nums}
+.metrica span{font-size:var(--t-s);opacity:.92}
+.metrica small{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-bottom:8px}
+.contexto-metricas{margin:12px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;font-size:var(--t-s)}
+.contexto-metricas div{border-top:1px solid var(--linea);padding-top:8px}
+.contexto-metricas dt{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--suave);font-weight:500}
+.contexto-metricas dd{margin:0;color:var(--indigo)}
+@media (max-width:640px){.metricas,.contexto-metricas{grid-template-columns:minmax(0,1fr)}}
+
+/* Muestras de trabajo (galería filtrable) */
+.muestras{margin-top:clamp(28px,3.4vw,44px);padding-top:clamp(22px,2.6vw,32px);border-top:1px solid var(--linea)}
+.muestras-cab{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:14px 24px;margin-bottom:20px}
+.muestras-cab h3{font-family:var(--f-titulo);font-size:var(--t-xl);text-transform:uppercase;letter-spacing:.03em;font-weight:600;color:var(--indigo)}
+.muestras-cab p{font-size:var(--t-s);color:var(--suave);margin-top:4px;max-width:52ch}
+.filtros{display:flex;flex-wrap:wrap;gap:6px}
+.filtro{font:500 .66rem var(--f-texto);letter-spacing:.12em;text-transform:uppercase;padding:9px 13px;border-radius:12px;border:1px solid var(--borde-vidrio);background:rgba(255,255,255,.45);color:var(--indigo);cursor:pointer;transition:background .2s,color .2s}
+.filtro:hover{background:rgba(255,255,255,.8)}
+.filtro[aria-pressed="true"]{background:linear-gradient(135deg,#6E5FE0,#4A3DBE);color:#fff;border-color:rgba(255,255,255,.4)}
+.filtro span{opacity:.7;margin-left:4px}
+.muestras-grid{column-count:3;column-gap:14px}
+.pieza{break-inside:avoid;margin:0 0 14px;border-radius:20px;overflow:hidden;background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.85);box-shadow:0 14px 34px -20px rgba(64,48,170,.45);display:inline-block;width:100%}
+.pieza video,.pieza img{display:block;width:100%;height:auto;max-width:100%;background:#1c1a3a}
+.pieza video{aspect-ratio:var(--ar,9/16);object-fit:cover}
+.ampliar{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;position:relative}
+.ampliar::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(46,42,120,.25));opacity:0;transition:opacity .25s}
+.ampliar:hover::after{opacity:1}
+.ampliar img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.ampliar:hover img{transform:scale(1.02)}
+.pieza figcaption{padding:12px 14px 14px;display:grid;gap:4px}
+.pieza figcaption .pastilla{justify-self:start}
+.pieza figcaption strong{font-family:var(--f-titulo);font-size:1.05rem;text-transform:uppercase;letter-spacing:.02em;color:var(--indigo);font-weight:600;line-height:1.15}
+.pieza figcaption p{font-size:.8rem;color:var(--suave);line-height:1.45}
+.pendientes-linea{margin-top:6px;font-size:var(--t-s);color:var(--suave)}
+@media (max-width:900px){.muestras-grid{column-count:2}}
+@media (max-width:480px){.muestras-grid{column-count:1}}
+/* Blog */
+.blog{margin-top:clamp(28px,3.4vw,44px);padding-top:clamp(22px,2.6vw,32px);border-top:1px solid var(--linea)}
+.blog-cifras{display:flex;gap:10px;margin:0}
+.blog-cifras div{padding:10px 16px;border-radius:16px;background:rgba(255,255,255,.5);border:1px solid #fff;text-align:center;min-width:86px}
+.blog-cifras dt{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--suave);font-weight:500}
+.blog-cifras dd{margin:0;font-weight:300;font-size:1.6rem;line-height:1.1;color:var(--indigo);font-variant-numeric:tabular-nums}
+.blog-tema{font-family:var(--f-texto);font-size:var(--t-xs);font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--violeta);margin:22px 0 8px;display:flex;align-items:center;gap:8px}
+.blog-tema span{display:inline-grid;place-items:center;min-width:22px;height:20px;border-radius:999px;background:rgba(91,75,209,.12);font-size:.62rem;letter-spacing:0}
+.blog-lista{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.blog-item{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;gap:14px;align-items:center;padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.42);border:1px solid rgba(255,255,255,.8);transition:background .2s}
+.blog-item:hover{background:rgba(255,255,255,.7)}
+.blog-num{font-weight:300;font-size:1.05rem;color:var(--violeta-claro);font-variant-numeric:tabular-nums}
+.blog-txt strong{display:block;font-weight:500;color:var(--indigo);line-height:1.35}
+.blog-txt p{font-size:.82rem;color:var(--suave);margin-top:2px;line-height:1.45}
+.blog-min{font-size:.72rem;color:var(--suave);white-space:nowrap;font-variant-numeric:tabular-nums}
+.blog-leer{display:inline-flex;align-items:center;gap:6px;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;text-decoration:none;padding:8px 12px;border-radius:12px;border:1px solid rgba(91,75,209,.3);color:var(--violeta);background:rgba(255,255,255,.6);white-space:nowrap}
+.blog-leer:hover{background:var(--violeta);color:#fff}
+.blog-leer svg{width:10px;height:10px}
+.blog-sin{font-size:.66rem;letter-spacing:.06em;color:var(--suave);white-space:nowrap}
+@media (max-width:640px){
+  .blog-cifras{width:100%}.blog-cifras div{flex:1;min-width:0}
+  .blog-cifras dd{font-size:1.3rem}
+  .blog-item{grid-template-columns:auto minmax(0,1fr) auto;row-gap:8px;align-items:start}
+  .blog-num{padding-top:2px}
+  .blog-txt{grid-column:2 / 4}
+  .blog-min{grid-column:2;grid-row:2;align-self:center}
+  .blog-leer,.blog-sin{grid-column:3;grid-row:2}
+}
+
+/* Nami: identidad y videos */
+.nami-sub{font-family:var(--f-titulo);font-size:var(--t-l);text-transform:uppercase;letter-spacing:.04em;color:#fff;margin:0 0 6px}
+.nami-intro{font-size:var(--t-s);color:#A9A9A6;max-width:62ch;margin-bottom:18px}
+.identidad{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:14px;align-items:start}
+.logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.caso-nami .pieza{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16);box-shadow:none}
+.caso-nami .pieza figcaption strong{color:#fff}
+.caso-nami .pieza figcaption p{color:#A9A9A6}
+.caso-nami .pieza .pastilla{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25);color:#fff}
+.caso-nami .pieza img,.caso-nami .pieza video{background:#000}
+.nami-videos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.nami-videos .pieza,.logos .pieza{margin:0;min-width:0}
+.pieza figcaption strong{overflow-wrap:break-word;hyphens:auto}
+@media (max-width:520px){.nami-videos .pieza figcaption,.logos .pieza figcaption{padding:10px}.nami-videos .pieza figcaption strong,.logos .pieza figcaption strong{font-size:.92rem}}
+.caso-nami .muestras{border-top-color:rgba(255,255,255,.16)}
+@media (max-width:900px){.identidad{grid-template-columns:minmax(0,1fr)}.nami-videos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.logos{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.logos .pieza figcaption{padding:8px}.logos .pieza figcaption p{display:none}}
+
+/* RioBita */
+.decisiones{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.decisiones li{padding:12px 16px;border-radius:14px;background:rgba(255,255,255,.42);border:1px solid rgba(255,255,255,.8);font-size:var(--t-s)}
+.decisiones strong{color:var(--indigo);font-weight:500}
+.paleta-tit{font-family:var(--f-texto);font-size:var(--t-xs);font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--violeta);margin:22px 0 10px}
+.paleta{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,130px),1fr));gap:10px}
+.paleta li{display:grid;gap:2px;padding:8px 8px 10px;border-radius:14px;background:rgba(255,255,255,.55);border:1px solid #fff;font-size:.78rem;min-width:0}
+.paleta .sw{display:block;height:46px;border-radius:9px;margin-bottom:6px;border:1px solid rgba(0,0,0,.06)}
+.paleta b{font-weight:500;color:var(--indigo)}
+.paleta code{font-family:var(--f-texto);font-size:.72rem;color:var(--suave);font-variant-numeric:tabular-nums}
+.paleta small{color:var(--suave);font-size:.72rem;line-height:1.3}
+.logos-rb{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.logos-rb .pieza{margin:0;min-width:0}
+.pieza-logo .ampliar{background:#FFFBF2;aspect-ratio:1/1;display:block;padding:14px;box-sizing:border-box}
+.pieza-logo .ampliar img{background:transparent;width:100%;height:100%;object-fit:contain}
+.logos-rb .pieza:first-child{grid-column:span 2}
+.logos-rb .pieza:first-child .ampliar{aspect-ratio:2/1}
+.manual-tira{list-style:none;margin:0;padding:4px 2px 14px;display:grid;grid-auto-flow:column;grid-auto-columns:min(78%,420px);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.manual-tira li{scroll-snap-align:start;display:grid;gap:8px;min-width:0}
+.manual-tira .ampliar{border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.9);box-shadow:0 12px 28px -18px rgba(64,48,170,.5)}
+.manual-tira img{display:block;width:100%;height:auto}
+.manual-tira span{font-size:.8rem;color:var(--suave)}
+.manual-tira b{font-weight:500;color:var(--violeta);margin-right:4px;font-variant-numeric:tabular-nums}
+#caso-riobita .muestras-grid .ampliar{background:#fff}
+@media (max-width:760px){.logos-rb{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Visor de imágenes */
+.visor{border:0;padding:0;background:transparent;max-width:min(92vw,980px);max-height:92vh;width:auto;overflow:visible}
+.visor::backdrop{background:rgba(24,20,60,.72);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.visor-caja{position:relative;display:grid;gap:10px;justify-items:center}
+.visor img{max-width:min(92vw,980px);max-height:80vh;width:auto;height:auto;border-radius:16px;box-shadow:0 30px 80px -20px rgba(0,0,0,.6)}
+.visor p{color:#fff;font-size:var(--t-s);text-align:center;max-width:60ch}
+.visor-cerrar{position:absolute;top:-14px;right:-14px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.7);background:rgba(255,255,255,.9);color:var(--indigo);cursor:pointer;display:grid;place-items:center;font-size:1.3rem;line-height:1}
+@media (max-width:600px){.visor-cerrar{top:-48px;right:0}}
+
+/* Caso Nami: identidad propia en blanco y negro */
+.caso-nami{background:linear-gradient(140deg,rgba(18,18,20,.95),rgba(8,8,9,.92));border-color:rgba(255,255,255,.25);color:#EDEDEB}
+.caso-nami .caso-titulo,.caso-nami .destacado,.caso-nami .ficha dd{color:#fff}
+.caso-nami .caso-cab .etiqueta,.caso-nami .caso-sub,.caso-nami .ficha dt,.caso-nami .galeria-nota,.caso-nami .marco p{color:#A9A9A6}
+.caso-nami .bloque h3{color:#fff}
+.caso-nami .bloque h3::after{background:rgba(255,255,255,.16)}
+.caso-nami .ficha{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
+.caso-nami .ficha div{border-color:rgba(255,255,255,.14)}
+.caso-nami ul.aportes li{border-color:rgba(255,255,255,.14)}
+.caso-nami ul.aportes li::before{background:#fff}
+.caso-nami .marco{border-color:rgba(255,255,255,.35);background:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 10px,transparent 10px 20px)}
+.caso-nami .marco .etiqueta{color:#fff}
+.caso-nami .pendiente{color:#fff;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.45)}
+.caso-nami .estado{color:#EDEDEB}
+.caso-nami .btn{color:#0B0B0C;background:#fff;border-color:#fff}
+.nami-titulo{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15em .3em}
+.nami-titulo .bn{display:inline-block;padding:0 .16em .04em;border-radius:.12em}
+.nami-titulo .b{background:#fff;color:#0B0B0C}
+.nami-titulo .n{border:2px solid #fff}
+.proceso-nami{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border:1px solid rgba(255,255,255,.2);border-radius:14px;overflow:hidden;counter-reset:np}
+.proceso-nami li{counter-increment:np;padding:14px 12px;font-size:var(--t-s);border-right:1px solid rgba(255,255,255,.2);min-width:0}
+.proceso-nami li:nth-child(even){background:#fff;color:#0B0B0C}
+.proceso-nami li:last-child{border-right:0}
+.proceso-nami li::before{content:counter(np,decimal-leading-zero);display:block;font-size:var(--t-xs);opacity:.6;margin-bottom:6px}
+@media (max-width:900px){.proceso-nami{grid-template-columns:repeat(4,minmax(0,1fr))}.proceso-nami li:nth-child(4){border-right:0}.proceso-nami li:nth-child(-n+4){border-bottom:1px solid rgba(255,255,255,.2)}}
+@media (max-width:520px){.proceso-nami{grid-template-columns:repeat(2,minmax(0,1fr))}.proceso-nami li{border-bottom:1px solid rgba(255,255,255,.2)}.proceso-nami li:nth-child(even){border-right:0}.proceso-nami li:nth-child(4){border-right:0}}
+.canales{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.canal{display:flex;flex-direction:column;gap:4px;padding:16px;border:1px solid rgba(255,255,255,.22);border-radius:16px;text-decoration:none;transition:background .25s,color .25s}
+.canal:hover{background:#fff;color:#0B0B0C}
+.canal b{font-family:var(--f-titulo);font-size:1.2rem;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+.canal span{font-size:var(--t-xs);opacity:.75}
+@media (max-width:640px){.canales{grid-template-columns:minmax(0,1fr)}}
+
+.tabla-estado{overflow-x:auto;border-radius:18px;background:rgba(255,255,255,.5);border:1px solid #fff}
+.tabla-estado table{width:100%;border-collapse:collapse;font-size:var(--t-s);min-width:520px}
+.tabla-estado th,.tabla-estado td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--linea);vertical-align:top}
+.tabla-estado th{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--suave);font-weight:500}
+.tabla-estado tr:last-child td{border-bottom:0}
+.productos{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.producto{padding:7px 14px;border-radius:999px;font-size:var(--t-s);background:#F6E7CF;color:#5A3D17;border:1px solid #fff}
+
+/* ---------- Logros ---------- */
+.logros-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2.2fr);gap:clamp(18px,3vw,36px);align-items:center}
+.cifras{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:clamp(16px,2vw,24px) 6px;border-radius:22px;background:rgba(255,255,255,.4);border:1px solid rgba(255,255,255,.8)}
+.cifra{text-align:center;padding:8px 12px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.cifra+.cifra{border-left:1px solid var(--linea)}
+.cifra .icono{width:38px;height:38px;border-radius:50%}
+.cifra .icono svg{width:18px;height:18px}
+.cifra b{font-weight:300;font-size:clamp(2rem,1.4rem + 1.8vw,2.8rem);line-height:1;color:var(--indigo);font-variant-numeric:tabular-nums}
+.cifra span{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--suave);line-height:1.4}
+@media (max-width:860px){.logros-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:620px){.cifras{grid-template-columns:repeat(2,minmax(0,1fr))}.cifra:nth-child(3){border-left:0}.cifra:nth-child(-n+2){border-bottom:1px solid var(--linea);padding-bottom:16px}.cifra:nth-child(n+3){padding-top:16px}}
+
+/* ---------- Trayectoria ---------- */
+.tray-sub{font-family:var(--f-texto);font-size:var(--t-xs);font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--violeta);margin:clamp(26px,3vw,38px) 0 10px}
+.tray-sub.primero{margin-top:0}
+.linea-tiempo{display:grid;gap:10px}
+.hito{display:grid;grid-template-columns:minmax(0,2.2fr) minmax(0,7.4fr) minmax(0,1.6fr);gap:18px;padding:18px 20px;border-radius:18px;background:rgba(255,255,255,.38);border:1px solid rgba(255,255,255,.7);align-items:baseline}
+.hito .cuando-izq{font-size:var(--t-s);color:var(--suave);font-variant-numeric:tabular-nums;font-weight:400}
+.hito h4{font-size:1.18rem;text-transform:uppercase;letter-spacing:.02em}
+.hito .org{font-weight:500;color:var(--violeta);font-size:var(--t-s)}
+.hito .logros{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:3px}
+.hito .logros li{font-size:var(--t-s);color:var(--suave);padding-left:16px;position:relative}
+.hito .logros li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--violeta-claro)}
+.hito .logros a{color:var(--violeta);font-weight:500;text-decoration:none}
+.hito .logros a:hover{text-decoration:underline}
+.hito .modalidad{justify-self:end}
+@media (max-width:760px){.hito{grid-template-columns:minmax(0,1fr);gap:4px}.hito .modalidad{justify-self:start}.hito .modalidad:empty{display:none}}
+.hv-caja{margin-top:clamp(20px,2.6vw,30px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;padding:18px 20px;border-radius:20px;background:rgba(255,255,255,.5);border:1px solid #fff}
+.hv-caja p{font-size:var(--t-s);color:var(--suave)}
+.hv-estado{font-size:var(--t-s);color:var(--suave);flex-basis:100%}
+.hv-estado:empty{display:none}
+
+/* ---------- Herramientas ---------- */
+.herr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px}
+.herr{padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.38);border:1px solid rgba(255,255,255,.75)}
+.herr h4{font-size:.95rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;color:var(--violeta)}
+.herr ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:var(--t-s)}
+.herr li{color:var(--indigo);font-weight:400}
+.herr li small{color:var(--suave);font-size:var(--t-xs);margin-left:4px}
+
+/* ---------- Contacto ---------- */
+.contacto-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) minmax(0,.9fr);gap:14px;align-items:stretch}
+.contacto-intro{padding:8px 4px;display:flex;flex-direction:column;gap:18px;justify-content:space-between;align-items:flex-start}
+.contacto-intro h2{font-size:var(--t-xl);text-transform:uppercase;letter-spacing:.03em;line-height:1.05}
+.contacto-intro p{font-size:var(--t-s);color:var(--suave)}
+.datos{padding:18px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;border-radius:22px;background:rgba(255,255,255,.42);border:1px solid rgba(255,255,255,.8)}
+.datos ul{list-style:none;margin:0;padding:0;display:grid;gap:14px;min-width:0}
+.datos li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center}
+.datos li > svg{width:20px;height:20px;color:var(--violeta)}
+.datos .etiqueta{display:block;color:var(--suave);font-size:.62rem}
+.valor{color:var(--indigo);font-weight:400;font-size:var(--t-s);overflow-wrap:anywhere;user-select:all;-webkit-user-select:all}
+.copiar{font:500 .62rem var(--f-texto);letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:10px;border:1px solid rgba(91,75,209,.3);background:rgba(255,255,255,.6);color:var(--violeta);cursor:pointer}
+.copiar:hover,.copiar.hecho{background:var(--violeta);color:#fff}
+.sello{width:clamp(110px,12vw,150px);aspect-ratio:1/1;border-radius:50%;display:grid;place-items:center;font-weight:200;font-size:clamp(2rem,1.4rem + 1.6vw,2.8rem);letter-spacing:.04em;color:var(--violeta);background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.95),rgba(255,255,255,.3) 45%,rgba(140,125,235,.35));border:1px solid #fff;box-shadow:0 0 0 10px rgba(255,255,255,.25), 0 0 0 22px rgba(255,255,255,.12), 0 20px 40px -20px rgba(64,48,170,.6);margin-right:14px}
+.redes{padding:18px 20px;border-radius:22px;background:rgba(255,255,255,.42);border:1px solid rgba(255,255,255,.8);display:flex;flex-direction:column;gap:12px}
+.redes h3{font-size:.95rem;text-transform:uppercase;letter-spacing:.08em}
+.redes a.red{display:flex;align-items:center;gap:10px;font-size:var(--t-s);color:var(--indigo);text-decoration:none;overflow-wrap:anywhere}
+.redes a.red:hover{color:var(--violeta)}
+.redes a.red svg{width:18px;height:18px;color:var(--violeta);flex:none}
+@media (max-width:980px){.contacto-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.datos{grid-template-columns:minmax(0,1fr)}.sello{display:none}}
+
+.pie{text-align:center;padding-block:20px calc(28px + env(safe-area-inset-bottom,0px));color:var(--suave)}
+.pie nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-bottom:10px;font-size:var(--t-s)}
+.pie nav a{text-decoration:none}
+.pie nav a:hover{color:var(--violeta)}
+.pie p{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase}
+
+@media (prefers-reduced-motion:no-preference){
+  .aparece{animation:sube .8s cubic-bezier(.2,.7,.2,1) both}
+  .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}
+  @keyframes sube{from{opacity:.001;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .flota{animation:flota 7s ease-in-out infinite}
+  @keyframes flota{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+
+<div class="fondo" aria-hidden="true"></div>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ============ ENCABEZADO ============ -->
+<header class="cabecera" id="cabecera">
+  <div class="wrap" style="position:relative">
+    <div class="barra vidrio">
+      <a class="marca" href="#inicio" aria-label="Laura Camila Yepes, ir al inicio"><span class="monograma" aria-hidden="true">LY</span>Laura Camila Yepes</a>
+      <button class="btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-principal">Menú</button>
+      <nav class="nav" id="nav-principal" aria-label="Navegación principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#capacidades">Capacidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#herramientas">Herramientas</a>
+        <a class="btn btn-lleno nav-cta" href="#contacto">Contactarme</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="contenido" class="wrap">
+
+<!-- ============ PORTADA ============ -->
+<section class="portada vidrio" id="inicio" aria-labelledby="nombre">
+  <div class="portada-top etiqueta"><span>Portafolio 2026</span><span>Marketing y Comunicaciones</span></div>
+  <p class="palabra aparece" aria-hidden="true">Portafolio</p>
+  <div class="portada-grid">
+    <div class="portada-texto aparece d1">
+      <p class="saludo">Hola, soy</p>
+      <h1 class="nombre" id="nombre">Laura Camila<br>Yepes Gutiérrez</h1>
+      <p class="rol">Marketing y comunicaciones<br>Estrategia digital</p>
+      <p class="lede">Diseño y ejecuto estrategias de marketing digital que conectan las marcas con las personas y con sus objetivos comerciales.</p>
+      <div class="acciones">
+        <a class="btn btn-lleno" href="#proyectos">Ver proyectos <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn" href="#perfil">Conocer mi perfil</a>
+        <a class="btn" href="#contacto">Contactarme</a>
+      </div>
+    </div>
+    <div class="foto-wrap aparece d2">
+      <div class="foto-burbuja" aria-hidden="true"></div>
+      <img class="foto" src="assets/laura-camila-yepes-recorte.webp" width="720" height="1080" alt="Retrato de Laura Camila Yepes Gutiérrez" fetchpriority="high">
+      <span class="esfera flota" style="width:40px;height:40px;right:10%;top:40%" aria-hidden="true"></span>
+      <span class="esfera" style="width:20px;height:20px;left:8%;top:14%" aria-hidden="true"></span>
+    </div>
+    <aside class="filosofia vidrio" aria-labelledby="filo-titulo">
+        <h2 id="filo-titulo">Filosofía de trabajo <svg class="chispa" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c.6 4.4 3.6 7.4 8 8-4.4.6-7.4 3.6-8 8-.6-4.4-3.6-7.4-8-8 4.4-.6 7.4-3.6 8-8z" fill="currentColor"/></svg></h2>
+        <div class="orbitas" aria-hidden="true"><i></i><i></i><span class="esfera"></span></div>
+        <p>Investigo para entender, creo para conectar y planteo estrategias para que cada idea cumpla un objetivo.</p>
+        <a href="#perfil" aria-label="Ir al perfil"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </aside>
+  </div>
+</section>
+
+<!-- ============ PERFIL ============ -->
+<section class="panel vidrio" id="perfil" aria-labelledby="perfil-titulo">
+  <div class="perfil-grid">
+    <div>
+      <span class="etiqueta" style="color:var(--violeta)">Perfil profesional</span>
+      <h2 class="titular" id="perfil-titulo" style="margin-top:12px">Estrategia digital que conecta <em>la marca con el negocio</em></h2>
+      <div class="texto">
+        <p>Soy Comunicadora Social con énfasis en Marketing Digital y experiencia en marketing, comunicaciones y posicionamiento de marca. He sido coordinadora de marketing y ventas, coordinadora de mercadeo, community manager y coordinadora de contenidos.</p>
+        <p>Diseño y ejecuto estrategias de marketing digital, campañas de pauta, generación de leads, gestión de contenidos y redes sociales, CRM, email marketing y desarrollo de sitios web. Mi trabajo articula los objetivos de comunicación con las necesidades comerciales de cada organización.</p>
+      </div>
+      <div class="chips" aria-label="Sectores en los que he trabajado">
+        <span class="chip">Educación</span><span class="chip">Sostenibilidad</span><span class="chip">Servicios</span><span class="chip">Turismo</span><span class="chip">Retail</span>
+      </div>
+    </div>
+    <ul class="fortalezas" aria-label="Fortalezas">
+      <li><strong>Estrategia y posicionamiento</strong><span>Defino objetivos, audiencias y mensajes antes de elegir formatos y canales.</span></li>
+      <li><strong>Pauta y leads</strong><span>Planeo y sigo campañas en Google, Meta, LinkedIn y TikTok orientadas a reconocimiento y captación.</span></li>
+      <li><strong>Contenido y narrativa</strong><span>Redacto, diseño y edito piezas coherentes con la marca en cada plataforma.</span></li>
+      <li><strong>Gestión y coordinación</strong><span>Coordino proyectos, proveedores, patrocinios y equipos para que las campañas salgan a tiempo.</span></li>
+    </ul>
+  </div>
+  <div class="problemas">
+    <div class="problema"><span class="etiqueta">Problema que resuelvo</span><strong>Un tema técnico que nadie entiende en redes.</strong><p>Lo traduzco a contenidos, artículos y piezas que una audiencia general puede seguir.</p></div>
+    <div class="problema"><span class="etiqueta">Problema que resuelvo</span><strong>Canales activos sin una estrategia detrás.</strong><p>Ordeno objetivos, parrilla, formatos, pauta y seguimiento.</p></div>
+    <div class="problema"><span class="etiqueta">Problema que resuelvo</span><strong>Un producto que todavía no tiene cara ni voz.</strong><p>Desarrollo concepto, identidad visual y narrativa de marca.</p></div>
+  </div>
+</section>
+
+<!-- ============ CAPACIDADES Y PROCESO ============ -->
+<section class="panel vidrio" id="capacidades" aria-labelledby="cap-titulo">
+  <div class="capproc">
+    <div>
+      <h2 class="subtitulo" id="cap-titulo">Mis capacidades</h2>
+      <div class="tiles">
+        <article class="tile">
+          <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
+          <h4>Estrategia</h4>
+          <ul><li>Marketing digital y 360°</li><li>Posicionamiento y branding</li><li>Planeación editorial</li></ul>
+          <div class="evid"><a href="#caso-ifcaya">IFCAYA</a><a href="#caso-cneutral">C-Neutral</a></div>
+        </article>
+        <article class="tile">
+          <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg></span>
+          <h4>Contenido</h4>
+          <ul><li>Storytelling y copywriting</li><li>Blogs y newsletters</li><li>Comunicación corporativa</li></ul>
+          <div class="evid"><a href="#caso-ifcaya">IFCAYA</a><a href="#caso-nami">Nami</a></div>
+        </article>
+        <article class="tile">
+          <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></span>
+          <h4>Diseño y video</h4>
+          <ul><li>Piezas gráficas</li><li>Identidad, etiquetas y empaques</li><li>Guion y edición de video</li></ul>
+          <div class="evid"><a href="#caso-ifcaya">IFCAYA</a><a href="#caso-riobita">RioBita</a><a href="#caso-nami">Nami</a></div>
+        </article>
+        <article class="tile">
+          <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 001 1h2l5 4V6L6 10H4a1 1 0 00-1 1z"/><path d="M15 9a4 4 0 010 6M18 6a8 8 0 010 12"/></svg></span>
+          <h4>Pauta y leads</h4>
+          <ul><li>Google, Meta, LinkedIn y TikTok Ads</li><li>Reconocimiento y captación</li><li>Seguimiento de KPI</li></ul>
+          <div class="evid"><a href="#caso-ifcaya">IFCAYA</a><a href="#caso-cneutral">C-Neutral</a></div>
+        </article>
+        <article class="tile">
+          <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></span>
+          <h4>Web, email y CRM</h4>
+          <ul><li>WordPress y Wix con SEO básico</li><li>Email marketing</li><li>Redes y comunidades</li></ul>
+          <div class="evid"><a href="#caso-ifcaya">IFCAYA</a><a href="#trayectoria">Trayectoria</a></div>
+        </article>
+        <article class="tile">
+          <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2 1-3.5 2-3.5s4 .5 4 3.5"/></svg></span>
+          <h4>Gestión</h4>
+          <ul><li>Proyectos, proveedores y patrocinios</li><li>Campañas y eventos</li><li>Fidelización de clientes</li></ul>
+          <div class="evid"><a href="#trayectoria">Trayectoria</a></div>
+        </article>
+      </div>
+    </div>
+    <div>
+      <h2 class="subtitulo">Mi proceso</h2>
+      <ol class="proceso">
+        <li class="paso">
+          <span class="burbuja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></span>
+          <span class="num">01</span><h4>Investigar</h4><p>Entiendo la marca, la audiencia y los objetivos comerciales.</p>
+        </li>
+        <li class="paso">
+          <span class="burbuja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18l5-6 4 3 7-9"/><path d="M15 6h5v5"/></svg></span>
+          <span class="num">02</span><h4>Plantear</h4><p>Defino estrategia, concepto, canales y parrilla.</p>
+        </li>
+        <li class="paso">
+          <span class="burbuja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg></span>
+          <span class="num">03</span><h4>Crear</h4><p>Redacto, diseño y edito las piezas.</p>
+        </li>
+        <li class="paso">
+          <span class="burbuja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+          <span class="num">04</span><h4>Publicar y medir</h4><p>Publico, pauto, analizo y ajusto.</p>
+        </li>
+      </ol>
+      <p class="proceso-nota">Cada ciclo empieza otra vez con lo aprendido en la medición.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROYECTOS ============ -->
+<section class="panel vidrio" id="proyectos" aria-labelledby="proy-titulo">
+  <div class="proyectos-grid">
+    <div class="proyectos-intro">
+      <div>
+        <h2 class="titulo-seccion" id="proy-titulo">Proyectos destacados <svg class="chispa" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c.6 4.4 3.6 7.4 8 8-4.4.6-7.4 3.6-8 8-.6-4.4-3.6-7.4-8-8 4.4-.6 7.4-3.6 8-8z" fill="currentColor"/></svg></h2>
+        <p class="sub" style="margin-top:12px">Cuatro casos contados completos: contexto, mi rol, enfoque, evidencias y resultados. Cada uno indica su estado.</p>
+      </div>
+      <div class="leyenda" aria-label="Leyenda de estados">
+        <span class="estado implementado"><i aria-hidden="true"></i>Implementado</span>
+        <span class="estado creacion"><i aria-hidden="true"></i>Creación de marca</span>
+        <span class="estado propio"><i aria-hidden="true"></i>Proyecto propio</span>
+        <span class="estado reportado"><i aria-hidden="true"></i>Resultado reportado</span>
+      </div>
+    </div>
+    <div class="tarjetas">
+      <a class="tarjeta vidrio" href="#caso-ifcaya">
+        <div class="miniatura mi-ifcaya">
+          <img class="mi-foto" src="assets/ifcaya/reforestando-el-planeta.webp" alt="" loading="lazy" width="1120" height="1400">
+          <span class="velo" aria-hidden="true"></span>
+          <span class="m-nombre">IFCAYA</span>
+        </div>
+        <div class="t-cuerpo">
+          <span class="t-num"><span>01</span>IFCAYA</span>
+          <p>Sitio web desde cero, piezas para redes, reels, documentos y pauta para una firma de ingeniería forestal y ambiental.</p>
+          <div class="t-pie"><span class="estado implementado"><i aria-hidden="true"></i>Implementado</span><span class="ver">Ver caso <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+      </a>
+      <a class="tarjeta vidrio" href="#caso-cneutral">
+        <div class="miniatura mi-cneutral">
+          <img class="mi-foto" src="assets/cneutral/cn-cop16-conservacion.webp" alt="" loading="lazy" width="1400" height="1400">
+          <span class="velo" aria-hidden="true"></span>
+          <span class="m-nombre">C-Neutral</span>
+        </div>
+        <div class="t-cuerpo">
+          <span class="t-num"><span>02</span>C-Neutral</span>
+          <p>Contenidos, reels, cubrimiento de eventos e informes para una marca de neutralidad de carbono: +80 % en seguidores y +90 % en alcance.</p>
+          <div class="t-pie"><span class="estado reportado"><i aria-hidden="true"></i>Resultado reportado</span><span class="ver">Ver caso <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+      </a>
+      <a class="tarjeta vidrio" href="#caso-nami">
+        <div class="miniatura mi-nami">
+          <img class="mi-foto" src="assets/nami/nami-logo-neon.webp" alt="" loading="lazy" width="933" height="1400" style="object-position:50% 30%">
+          <span class="velo" aria-hidden="true"></span>
+          <span class="m-nombre">Nami en Blanco y Negro</span>
+        </div>
+        <div class="t-cuerpo">
+          <span class="t-num"><span>03</span>Nami</span>
+          <p>Marca de contenido narrada en primera persona por una gata tuxedo: identidad, guion, grabación y edición de videos.</p>
+          <div class="t-pie"><span class="estado propio"><i aria-hidden="true"></i>Proyecto propio</span><span class="ver">Ver caso <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+      </a>
+      <a class="tarjeta vidrio" href="#caso-riobita">
+        <div class="miniatura mi-riobita">
+          <img class="mi-logo" src="assets/riobita/rb-imagotipo-transparente.webp" alt="" loading="lazy" width="489" height="632">
+        </div>
+        <div class="t-cuerpo">
+          <span class="t-num"><span>04</span>RioBita</span>
+          <p>Creación completa de una marca de miel, marañón y vinos: manual de marca, sistema de logotipos y etiquetas.</p>
+          <div class="t-pie"><span class="estado creacion"><i aria-hidden="true"></i>Creación de marca</span><span class="ver">Ver caso <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASO 01 · IFCAYA ============ -->
+<article class="caso vidrio" id="caso-ifcaya" aria-labelledby="ifcaya-titulo">
+  <header class="caso-cab">
+    <div>
+      <span class="etiqueta">Caso 01 · Comunicación digital</span>
+      <h2 class="caso-titulo" id="ifcaya-titulo">IFCAYA</h2>
+      <p class="caso-sub">Conectar contenidos, sitio web y pauta para que una firma de ingeniería forestal explique lo que hace y reciba contactos.</p>
+    </div>
+    <div class="caso-estados"><span class="estado implementado"><i aria-hidden="true"></i>Implementado</span></div>
+  </header>
+  <div class="caso-cuerpo">
+    <aside class="ficha" aria-label="Ficha del proyecto">
+      <dl>
+        <div><dt>Organización</dt><dd>IFCAYA S.A.S.</dd></div>
+        <div><dt>Mi rol</dt><dd>Coordinadora de Marketing y Ventas</dd></div>
+        <div><dt>Periodo</dt><dd>Ago 2024 – Nov 2025 · Bogotá</dd></div>
+        <div><dt>Canales</dt><dd>Sitio web (WordPress + Elementor), blog, newsletter, Instagram, LinkedIn, Facebook, Google Ads y Meta Ads</dd></div>
+        <div><dt>Enlaces</dt><dd>
+          <a href="https://www.ifcaya.com.co/" target="_blank" rel="noopener">Sitio web <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a>
+          <a href="https://www.ifcaya.com.co/blog-sostenible/" target="_blank" rel="noopener">Blog sostenible <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a>
+          <a href="https://linktr.ee/IFCAYA" target="_blank" rel="noopener">Linktree <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a>
+          <a href="https://www.instagram.com/ifcayasas/" target="_blank" rel="noopener">Instagram <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a>
+        </dd></div>
+      </dl>
+    </aside>
+    <div class="relato">
+      <section class="bloque">
+        <h3>Contexto</h3>
+        <p>IFCAYA es una empresa colombiana de ingeniería forestal y consultoría ambiental con trayectoria desde 1970. Trabaja en restauración ecológica, compensación, gestión ambiental y proyectos de captura de carbono, con clientes del sector público y privado.</p>
+        <p>El objetivo era fortalecer su posicionamiento digital y comercial. El conocimiento técnico existía, pero había que convertirlo en contenidos que entendieran los clientes potenciales y que llevaran a una conversación comercial.</p>
+      </section>
+      <section class="bloque">
+        <h3>Mi aporte</h3>
+        <ul class="aportes">
+          <li>Diseño e implementación de la estrategia de marketing y comunicación</li>
+          <li>Desarrollo desde cero del sitio web corporativo en WordPress con Elementor</li>
+          <li>Estructura de contenidos web por servicios, proyectos y públicos</li>
+          <li>Parrillas para Instagram, LinkedIn y Facebook</li>
+          <li>Redacción de 17 artículos para el blog sostenible y de newsletters</li>
+          <li>Reels y videos con voceros del equipo, con subtítulos</li>
+          <li>Piezas editoriales: infografías, portadas de documentos y convocatorias</li>
+          <li>Optimización SEO básica</li>
+          <li>Campañas en Google Ads y Meta Ads para reconocimiento y leads</li>
+          <li>Seguimiento de indicadores de campaña</li>
+        </ul>
+      </section>
+      <section class="bloque">
+        <h3>Enfoque</h3>
+        <p class="destacado">Cada pieza tenía un lugar en el recorrido: atraer en redes, profundizar en el blog y convertir en el sitio.</p>
+        <figure class="ecosistema">
+          <svg viewBox="0 0 720 230" role="img" aria-labelledby="eco-t eco-d">
+            <title id="eco-t">Ecosistema de contenidos de IFCAYA</title>
+            <desc id="eco-d">Redes sociales y pauta digital llevan tráfico al blog y al sitio web; el sitio, optimizado para buscadores, convierte visitas en contactos. La newsletter mantiene la relación con los contactos.</desc>
+            <defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5B4BD1"/></marker></defs>
+            <g font-family="Outfit, Arial, sans-serif" font-size="14" fill="#2E2A78">
+              <rect x="10" y="20" width="150" height="56" rx="14" fill="#FFFFFF" stroke="rgba(91,75,209,.3)"/><text x="85" y="45" text-anchor="middle" font-weight="500">Redes sociales</text><text x="85" y="63" text-anchor="middle" font-size="11" fill="#5C5990">parrillas y piezas</text>
+              <rect x="10" y="150" width="150" height="56" rx="14" fill="#FFFFFF" stroke="rgba(91,75,209,.3)"/><text x="85" y="175" text-anchor="middle" font-weight="500">Pauta digital</text><text x="85" y="193" text-anchor="middle" font-size="11" fill="#5C5990">Meta Ads · Google Ads</text>
+              <rect x="230" y="20" width="150" height="56" rx="14" fill="#FFFFFF" stroke="rgba(91,75,209,.3)"/><text x="305" y="45" text-anchor="middle" font-weight="500">Blog</text><text x="305" y="63" text-anchor="middle" font-size="11" fill="#5C5990">artículos y SEO</text>
+              <rect x="230" y="150" width="150" height="56" rx="14" fill="#FFFFFF" stroke="rgba(91,75,209,.3)"/><text x="305" y="175" text-anchor="middle" font-weight="500">Buscadores</text><text x="305" y="193" text-anchor="middle" font-size="11" fill="#5C5990">SEO básico</text>
+              <rect x="450" y="80" width="150" height="66" rx="14" fill="#4A3DBE"/><text x="525" y="108" text-anchor="middle" font-weight="500" fill="#FFFFFF">Sitio web</text><text x="525" y="127" text-anchor="middle" font-size="11" fill="#D9D3FA">WordPress + Elementor</text>
+              <rect x="630" y="88" width="82" height="50" rx="25" fill="#8C7DEB"/><text x="671" y="118" text-anchor="middle" font-weight="600" fill="#FFFFFF">Leads</text>
+              <rect x="450" y="182" width="150" height="40" rx="14" fill="#FFFFFF" stroke="rgba(91,75,209,.3)"/><text x="525" y="207" text-anchor="middle" font-weight="500">Newsletter</text>
+            </g>
+            <g stroke="#5B4BD1" stroke-width="1.6" fill="none" marker-end="url(#flecha)">
+              <path d="M160 48H226"/><path d="M160 178C200 178 200 130 446 118"/><path d="M380 48C420 48 420 100 446 104"/><path d="M380 178C420 178 420 130 446 124"/><path d="M600 113H626"/><path d="M671 140C671 200 640 202 604 202"/>
+            </g>
+          </svg>
+          <figcaption>Esquema de cómo se relacionan los canales en los que trabajé. Representa el enfoque, no un reporte de resultados.</figcaption>
+        </figure>
+      </section>
+      <section class="bloque">
+        <h3>Resultados</h3>
+        <ul class="aportes">
+          <li>Sitio web corporativo desarrollado desde cero</li>
+          <li>Mayor alcance y captación de seguidores al crear y optimizar los canales sociales</li>
+          <li>Reconocimiento de marca fortalecido con campañas segmentadas</li>
+        </ul>
+        <p class="advertencia">Resultados reportados en mi hoja de vida, sin cifras. <span class="pendiente" data-pendiente="cifras-ifcaya">Agregar cifras solo si hay fuente</span></p>
+      </section>
+    </div>
+  </div>
+  <section class="muestras" aria-labelledby="ifcaya-muestras">
+    <div class="muestras-cab">
+      <div><h3 id="ifcaya-muestras">Muestras del trabajo</h3><p>Piezas desarrolladas para IFCAYA durante mi gestión. Toca una imagen para verla en grande; los videos se reproducen aquí mismo.</p></div>
+      <div class="filtros" role="group" aria-label="Filtrar muestras">
+        <button class="filtro" type="button" data-filtro="todo" aria-pressed="true">Todo<span>11</span></button>
+        <button class="filtro" type="button" data-filtro="video" aria-pressed="false">Video<span>3</span></button>
+        <button class="filtro" type="button" data-filtro="redes" aria-pressed="false">Redes<span>4</span></button>
+        <button class="filtro" type="button" data-filtro="editorial" aria-pressed="false">Editorial<span>3</span></button>
+        <button class="filtro" type="button" data-filtro="foto" aria-pressed="false">Fotografía<span>1</span></button>
+      </div>
+    </div>
+    <div class="muestras-grid">
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/ifcaya/ifcaya-miel-canapro-poster.webp" width="720" height="1280" aria-label="Miel de Canapro"><source src="assets/ifcaya/ifcaya-miel-canapro.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Reel · 1:14</span><strong>Miel de Canapro</strong><p>Video con vocera del equipo técnico sobre la miel producida dentro de plantaciones forestales en Vichada. Subtítulos dinámicos y tomas de apoyo.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="redes">
+        <button class="ampliar" type="button" data-src="assets/ifcaya/reforestar-nativas.webp" data-texto="¿Por qué reforestar con nativas?" aria-label="Ampliar: ¿Por qué reforestar con nativas?"><img src="assets/ifcaya/reforestar-nativas.webp" alt="Pieza de IFCAYA titulada ¿Por qué reforestar con nativas?, con un mosaico de fotos de bosques y ríos sobre un cielo azul" loading="lazy" width="1120" height="1400"></button>
+        <figcaption><span class="pastilla">Post 4:5</span><strong>¿Por qué reforestar con nativas?</strong><p>Contenido educativo: beneficios de las especies nativas, con mosaico de fotografías de campo.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="editorial">
+        <button class="ampliar" type="button" data-src="assets/ifcaya/estudio-factibilidad.webp" data-texto="Estudio de factibilidad para proyectos energéticos" aria-label="Ampliar: Estudio de factibilidad para proyectos energéticos"><img src="assets/ifcaya/estudio-factibilidad.webp" alt="Infografía de IFCAYA con seis pasos de un estudio de factibilidad para proyectos energéticos" loading="lazy" width="990" height="1400"></button>
+        <figcaption><span class="pastilla">Infografía</span><strong>Estudio de factibilidad para proyectos energéticos</strong><p>Infografía en seis pasos que explica qué debe incluir el estudio, con fotografías e íconos por etapa.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="redes">
+        <button class="ampliar" type="button" data-src="assets/ifcaya/cop16.webp" data-texto="Estamos en la COP16" aria-label="Ampliar: Estamos en la COP16"><img src="assets/ifcaya/cop16.webp" alt="Historia de IFCAYA con el texto Estamos en la COP16 y una foto de cuatro personas en el evento" loading="lazy" width="788" height="1400"></button>
+        <figcaption><span class="pastilla">Historia 9:16</span><strong>Estamos en la COP16</strong><p>Cubrimiento de la participación de IFCAYA en la COP16, con el tema del día y llamado a contacto.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/ifcaya/ifcaya-biochar-poster.webp" width="720" height="1280" aria-label="Biochar: de residuo a solución"><source src="assets/ifcaya/ifcaya-biochar.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Reel · 0:59</span><strong>Biochar: de residuo a solución</strong><p>Video educativo con vocera del área de investigación: qué es el biochar y cómo mejora los suelos y ayuda a mitigar el cambio climático.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="editorial">
+        <button class="ampliar" type="button" data-src="assets/ifcaya/pemf-canapro.webp" data-texto="Plan de Establecimiento y Manejo Forestal" aria-label="Ampliar: Plan de Establecimiento y Manejo Forestal"><img src="assets/ifcaya/pemf-canapro.webp" alt="Portada del Plan de Establecimiento y Manejo Forestal de IFCAYA, con un collage de fotos en rombos" loading="lazy" width="990" height="1400"></button>
+        <figcaption><span class="pastilla">Portada de documento</span><strong>Plan de Establecimiento y Manejo Forestal</strong><p>Portada del documento técnico del PEMF para 12,5 hectáreas de especies nativas en Canapro, Vichada (agosto de 2025).</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="redes">
+        <button class="ampliar" type="button" data-src="assets/ifcaya/reforestando-el-planeta.webp" data-texto="Reforestando el planeta" aria-label="Ampliar: Reforestando el planeta"><img src="assets/ifcaya/reforestando-el-planeta.webp" alt="Pieza de IFCAYA con el texto Reforestando el planeta sobre una foto de personas sembrando un árbol" loading="lazy" width="1120" height="1400"></button>
+        <figcaption><span class="pastilla">Post 4:5</span><strong>Reforestando el planeta</strong><p>Pieza con registro de una jornada de siembra comunitaria y mensaje de marca.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="editorial">
+        <button class="ampliar" type="button" data-src="assets/ifcaya/convocatoria-maranon.webp" data-texto="Proyecto agrupado de marañón en Vichada" aria-label="Ampliar: Proyecto agrupado de marañón en Vichada"><img src="assets/ifcaya/convocatoria-maranon.webp" alt="Convocatoria de IFCAYA a la socialización del proyecto agrupado de marañón en Vichada" loading="lazy" width="990" height="1400"></button>
+        <figcaption><span class="pastilla">Convocatoria</span><strong>Proyecto agrupado de marañón en Vichada</strong><p>Invitación a la reunión de socialización con autoridades y comunidades (febrero de 2025).</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/ifcaya/ifcaya-dia-medio-ambiente-poster.webp" width="720" height="1280" aria-label="Día Mundial del Medio Ambiente"><source src="assets/ifcaya/ifcaya-dia-medio-ambiente.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Reel · 0:17</span><strong>Día Mundial del Medio Ambiente</strong><p>Reel de efeméride del 5 de junio, con texto animado sobre imágenes de naturaleza.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="redes">
+        <button class="ampliar" type="button" data-src="assets/ifcaya/proyectos-sostenibilidad.webp" data-texto="Mejorando proyectos de sostenibilidad" aria-label="Ampliar: Mejorando proyectos de sostenibilidad"><img src="assets/ifcaya/proyectos-sostenibilidad.webp" alt="Pieza cuadrada de IFCAYA titulada Mejorando proyectos de sostenibilidad, con un paisaje de montaña recortado" loading="lazy" width="1400" height="1400"></button>
+        <figcaption><span class="pastilla">Portada de carrusel 1:1</span><strong>Mejorando proyectos de sostenibilidad</strong><p>Primera lámina de un carrusel sobre el seguimiento a proyectos de conservación y reforestación.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="foto">
+        <button class="ampliar" type="button" data-src="assets/ifcaya/fotografia-biodiversidad.webp" data-texto="Biodiversidad en campo" aria-label="Ampliar: Biodiversidad en campo"><img src="assets/ifcaya/fotografia-biodiversidad.webp" alt="Lagartija marrón sobre una roca entre pastos verdes" loading="lazy" width="1400" height="933"></button>
+        <figcaption><span class="pastilla">Fotografía</span><strong>Biodiversidad en campo</strong><p>Fotografía de fauna usada como recurso visual para los contenidos de la marca.</p></figcaption>
+      </figure>
+    </div>
+    <p class="pendientes-linea"><span class="pendiente" data-pendiente="ifcaya-web">Pendiente: capturas del sitio web, una newsletter y un anuncio</span></p>
+  </section>
+  <section class="blog" aria-labelledby="ifcaya-blog">
+    <div class="muestras-cab">
+      <div><h3 id="ifcaya-blog">Artículos para el blog sostenible</h3><p>Textos que redacté para el blog del sitio web de IFCAYA, organizados por tema. Los enlaces abren la versión publicada.</p></div>
+      <dl class="blog-cifras">
+        <div><dt>Artículos</dt><dd>17</dd></div>
+        <div><dt>Palabras</dt><dd>11.808</dd></div>
+        <div><dt>Temas</dt><dd>5</dd></div>
+      </dl>
+    </div>
+      <h4 class="blog-tema">Restauración ecológica y suelos <span>4</span></h4>
+      <ol class="blog-lista">
+        <li class="blog-item"><span class="blog-num">01</span><div class="blog-txt"><strong>Restauración activa vs. restauración pasiva: ¿qué estrategia elegir para recuperar los ecosistemas?</strong><p>Diferencias entre ambos enfoques y cuándo conviene cada uno.</p></div><span class="blog-min">7 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/restauracion-activa-vs-restauracion-pasiva-que-estrategia-elegir-para-recuperar-los-ecosistemas/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Restauración activa vs. restauración pasiva: ¿qué estrategia elegir para recuperar los ecosistemas?">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">02</span><div class="blog-txt"><strong>Restauración de suelos degradados: estrategias para recuperar su funcionalidad</strong><p>Causas de la degradación y técnicas para recuperar el suelo.</p></div><span class="blog-min">4 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/restauracion-de-suelos-degradados-estrategias-para-recuperar-su-funcionalidad/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Restauración de suelos degradados: estrategias para recuperar su funcionalidad">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">03</span><div class="blog-txt"><strong>Fertilización controlada en procesos de reforestación: una mirada técnica y equilibrada</strong><p>Cuándo es válida en reforestación productiva y por qué se cuestiona en restauración ecológica.</p></div><span class="blog-min">4 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/fertilizacion-controlada-en-procesos-de-reforestacion-una-mirada-tecnica-y-equilibrada/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Fertilización controlada en procesos de reforestación: una mirada técnica y equilibrada">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">04</span><div class="blog-txt"><strong>Monitoreo y evaluación de proyectos forestales: asegurando el éxito de la restauración ecológica</strong><p>Metodologías y herramientas para verificar que un proyecto cumple sus objetivos.</p></div><span class="blog-min">6 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/monitoreo-y-evaluacion-de-proyectos-forestales-asegurando-el-exito-de-la-restauracion-ecologica/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Monitoreo y evaluación de proyectos forestales: asegurando el éxito de la restauración ecológica">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+      </ol>
+      <h4 class="blog-tema">Manejo forestal y producción sostenible <span>5</span></h4>
+      <ol class="blog-lista">
+        <li class="blog-item"><span class="blog-num">05</span><div class="blog-txt"><strong>Silvicultura sostenible: conservando los bosques hoy para un mañana responsable</strong><p>Prácticas para aprovechar el bosque sin comprometer su regeneración.</p></div><span class="blog-min">4 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/silvicultura-sostenible-conservando-los-bosques-hoy-para-un-manana-responsable/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Silvicultura sostenible: conservando los bosques hoy para un mañana responsable">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">06</span><div class="blog-txt"><strong>Técnicas de manejo forestal sostenible: clave para la conservación y el desarrollo en Colombia</strong><p>Corta selectiva y otras técnicas dentro del marco legal colombiano.</p></div><span class="blog-min">5 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/tecnicas-de-manejo-forestal-sostenible-clave-para-la-conservacion-y-el-desarrollo-en-colombia/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Técnicas de manejo forestal sostenible: clave para la conservación y el desarrollo en Colombia">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">07</span><div class="blog-txt"><strong>Producción sostenible de madera y biomasa: una apuesta por el manejo responsable de los recursos forestales</strong><p>Qué es la producción sostenible y qué beneficios trae al territorio.</p></div><span class="blog-min">4 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/produccion-sostenible-de-madera-y-biomasa-una-apuesta-por-el-manejo-responsable-de-los-recursos-forestales/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Producción sostenible de madera y biomasa: una apuesta por el manejo responsable de los recursos forestales">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">08</span><div class="blog-txt"><strong>Proyectos forestales sostenibles: clave para un futuro verde</strong><p>Beneficios ambientales y sociales: carbono, biodiversidad y desarrollo rural.</p></div><span class="blog-min">4 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/proyectos-forestales-sostenibles-clave-para-un-futuro-verde/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Proyectos forestales sostenibles: clave para un futuro verde">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">09</span><div class="blog-txt"><strong>Siembra de marañón en Vichada: producción, restauración y desarrollo en un solo sistema</strong><p>El modelo agroforestal de IFCAYA en Puerto Carreño.</p></div><span class="blog-min">4 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/siembra-de-maranon-en-vichada-produccion-restauracion-y-desarrollo-en-un-solo-sistema/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Siembra de marañón en Vichada: producción, restauración y desarrollo en un solo sistema">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+      </ol>
+      <h4 class="blog-tema">Planificación de proyectos energéticos <span>2</span></h4>
+      <ol class="blog-lista">
+        <li class="blog-item"><span class="blog-num">10</span><div class="blog-txt"><strong>Zonificación ambiental: la clave para planificar proyectos forestales y energéticos sostenibles</strong><p>Cómo el análisis del territorio define qué se puede hacer en cada zona.</p></div><span class="blog-min">4 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/zonificacion-ambiental-la-clave-para-planificar-proyectos-forestales-y-energeticos-sostenibles/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Zonificación ambiental: la clave para planificar proyectos forestales y energéticos sostenibles">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">11</span><div class="blog-txt"><strong>Inventarios de flora y fauna: la base técnica para proyectos energéticos responsables</strong><p>El estudio biótico que exigen los proyectos de energía para su licencia ambiental.</p></div><span class="blog-min">5 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/inventarios-de-flora-y-fauna-la-base-tecnica-para-proyectos-energeticos-responsables-ii/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Inventarios de flora y fauna: la base técnica para proyectos energéticos responsables">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+      </ol>
+      <h4 class="blog-tema">Biodiversidad y sociedad <span>3</span></h4>
+      <ol class="blog-lista">
+        <li class="blog-item"><span class="blog-num">12</span><div class="blog-txt"><strong>El papel crucial de las abejas en la sostenibilidad ambiental: más allá de la miel</strong><p>Su papel como polinizadoras en la biodiversidad y la seguridad alimentaria.</p></div><span class="blog-min">4 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/el-papel-crucial-de-las-abejas-en-la-sostenibilidad-ambiental-mas-alla-de-la-miel/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: El papel crucial de las abejas en la sostenibilidad ambiental: más allá de la miel">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">13</span><div class="blog-txt"><strong>La justicia social y el medio ambiente: un compromiso por un futuro sostenible</strong><p>La relación entre equidad social y sostenibilidad, a propósito del 20 de febrero.</p></div><span class="blog-min">3 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/la-justicia-social-y-el-medio-ambiente-un-compromiso-por-un-futuro-sostenible/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: La justicia social y el medio ambiente: un compromiso por un futuro sostenible">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">14</span><div class="blog-txt"><strong>Mujeres en la ciencia ambiental: liderazgo que transforma el territorio</strong><p>El liderazgo femenino en la ciencia ambiental, a propósito del 11 de febrero.</p></div><span class="blog-min">3 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2026/02/12/mujeres-en-la-ciencia-ambiental-liderazgo-que-transforma-el-territorio/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Mujeres en la ciencia ambiental: liderazgo que transforma el territorio">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+      </ol>
+      <h4 class="blog-tema">Gestión e ingeniería ambiental <span>3</span></h4>
+      <ol class="blog-lista">
+        <li class="blog-item"><span class="blog-num">15</span><div class="blog-txt"><strong>Gestión ambiental: la clave para un futuro sostenible</strong><p>Qué implica y qué beneficios trae a empresas y territorios.</p></div><span class="blog-min">2 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/gestion-ambiental-la-clave-para-un-futuro-sostenible/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Gestión ambiental: la clave para un futuro sostenible">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+        <li class="blog-item"><span class="blog-num">16</span><div class="blog-txt"><strong>El rol de la ingeniería ambiental en la sostenibilidad</strong><p>Qué hace un ingeniero ambiental y por qué es clave.</p></div><span class="blog-min">2 min</span><span class="blog-sin">Redactado · sin publicar</span></li>
+        <li class="blog-item"><span class="blog-num">17</span><div class="blog-txt"><strong>Ingeniería forestal vs. ingeniería ambiental: entendiendo sus roles y diferencias</strong><p>Diferencias de enfoque y cómo colaboran ambas disciplinas.</p></div><span class="blog-min">3 min</span><a class="blog-leer" href="https://www.ifcaya.com.co/2025/07/18/ingenieria-forestal-vs-ingenieria-ambiental-entendiendo-sus-roles-y-diferencias/" target="_blank" rel="noopener" aria-label="Leer en el blog de IFCAYA: Ingeniería forestal vs. ingeniería ambiental: entendiendo sus roles y diferencias">Leer <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></li>
+      </ol>
+    <p class="advertencia">Tiempo de lectura estimado a 200 palabras por minuto.</p>
+  </section>
+  <a class="btn volver" href="#proyectos"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Volver a proyectos</a>
+</article>
+
+<!-- ============ CASO 02 · C-NEUTRAL ============ -->
+<article class="caso vidrio" id="caso-cneutral" aria-labelledby="cneutral-titulo">
+  <header class="caso-cab">
+    <div>
+      <span class="etiqueta">Caso 02 · Contenidos y marca</span>
+      <h2 class="caso-titulo" id="cneutral-titulo">C-Neutral</h2>
+      <p class="caso-sub">Hacer cercana y comprensible la neutralidad de carbono en los canales de una marca de sostenibilidad.</p>
+    </div>
+    <div class="caso-estados"><span class="estado implementado"><i aria-hidden="true"></i>Implementado</span><span class="estado reportado"><i aria-hidden="true"></i>Resultado reportado</span></div>
+  </header>
+  <div class="caso-cuerpo">
+    <aside class="ficha" aria-label="Ficha del proyecto">
+      <dl>
+        <div><dt>Marca</dt><dd>C-Neutral</dd></div>
+        <div><dt>Mi rol</dt><dd>Coordinadora de Marketing y Ventas</dd></div>
+        <div><dt>Periodo</dt><dd>Jul 2024 – Mar 2025 · Bogotá</dd></div>
+        <div><dt>Canales</dt><dd>Instagram, LinkedIn, Facebook y TikTok</dd></div>
+        <div><dt>Enlaces</dt><dd><a href="https://www.instagram.com/cneutral.co/" target="_blank" rel="noopener">@cneutral.co <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></dd></div>
+      </dl>
+    </aside>
+    <div class="relato">
+      <section class="bloque">
+        <h3>Contexto</h3>
+        <p>C-Neutral es una marca vinculada a la sostenibilidad y la neutralidad de carbono. Comunicar este tema exige precisión técnica, porque hablar de huella, reducción y compensación tiene matices, y al mismo tiempo cercanía, para que una audiencia general quiera seguir la conversación.</p>
+      </section>
+      <section class="bloque">
+        <h3>Mi aporte</h3>
+        <ul class="aportes">
+          <li>Diseño e implementación de la estrategia de marketing y comunicación</li>
+          <li>Parrillas para Instagram, LinkedIn y otras plataformas</li>
+          <li>Contenido educativo, casos de éxito y servicios</li>
+          <li>Creación y publicación de piezas gráficas y audiovisuales</li>
+          <li>Campañas digitales orientadas a destacar servicios estratégicos</li>
+          <li>Captación de leads de calidad</li>
+          <li>Videos con voceros: invitaciones a webinars y explicaciones de servicios</li>
+          <li>Cubrimiento de eventos: COP16, CIMNAV 2024 y Foro Energético ANDEG</li>
+          <li>Informes animados para clientes sobre los bosques sembrados</li>
+          <li>Contenido educativo sobre el impuesto al carbono y su mecanismo de no causación</li>
+        </ul>
+      </section>
+      <section class="bloque">
+        <h3>Resultados reportados</h3>
+        <div class="metricas">
+          <div class="metrica"><small>Seguidores</small><b>+80 %</b><span>en captación de seguidores</span></div>
+          <div class="metrica"><small>Alcance</small><b>+90 %</b><span>en alcance de las publicaciones</span></div>
+        </div>
+        <dl class="contexto-metricas">
+          <div><dt>Periodo</dt><dd>Durante mi gestión, jul 2024 – mar 2025</dd></div>
+          <div><dt>Fuente</dt><dd>Reporte propio en hoja de vida</dd></div>
+          <div><dt>Contexto</dt><dd>Estrategia de contenido y campañas digitales</dd></div>
+        </dl>
+        <p class="advertencia">Cifras reportadas sobre la cuenta de la marca. También reporté crecimiento en leads de calidad, sin cifra. <span class="pendiente" data-pendiente="capturas-cneutral">Agregar captura de estadísticas como evidencia</span></p>
+      </section>
+    </div>
+  </div>
+  <section class="muestras" aria-labelledby="cneutral-muestras">
+    <div class="muestras-cab">
+      <div><h3 id="cneutral-muestras">Muestras del trabajo</h3><p>Piezas desarrolladas para C-Neutral: videos, cubrimiento de eventos, contenido educativo e informes para clientes. Toca una imagen para verla en grande.</p></div>
+      <div class="filtros" role="group" aria-label="Filtrar muestras de C-Neutral">
+        <button class="filtro" type="button" data-filtro="todo" aria-pressed="true">Todo<span>20</span></button>
+        <button class="filtro" type="button" data-filtro="video" aria-pressed="false">Video<span>8</span></button>
+        <button class="filtro" type="button" data-filtro="eventos" aria-pressed="false">Eventos<span>7</span></button>
+        <button class="filtro" type="button" data-filtro="educativo" aria-pressed="false">Educativo<span>5</span></button>
+      </div>
+    </div>
+    <div class="muestras-grid">
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/cneutral/cn-bosque-andeg-poster.webp" width="720" height="1018" style="--ar:720/1018" aria-label="Informe Bosque ANDEG 2024"><source src="assets/cneutral/cn-bosque-andeg.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Informe animado · 0:19</span><strong>Informe Bosque ANDEG 2024</strong><p>Entregable animado para el cliente: árboles sembrados, especies nativas y ubicación del bosque en la Reserva del Sisga, Cundinamarca.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="eventos">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-cop16-estaremos-presentes.webp" data-texto="Estaremos presentes en la COP16" aria-label="Ampliar: Estaremos presentes en la COP16"><img src="assets/cneutral/cn-cop16-estaremos-presentes.webp" alt="Pieza de C-Neutral con el texto Estaremos presentes en la COP16, un guacamayo de fondo y tres retratos del equipo" loading="lazy" width="1400" height="1400"></button>
+        <figcaption><span class="pastilla">Post 1:1</span><strong>Estaremos presentes en la COP16</strong><p>Anuncio de la participación de la empresa en la COP16, con sus voceros.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="educativo">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-mecanismo-50.webp" data-texto="Aplica al mecanismo de no causación" aria-label="Ampliar: Aplica al mecanismo de no causación"><img src="assets/cneutral/cn-mecanismo-50.webp" alt="Pieza de C-Neutral sobre el mecanismo de no causación del impuesto al carbono, con una cascada en la selva de fondo" loading="lazy" width="1400" height="1400"></button>
+        <figcaption><span class="pastilla">Post 1:1</span><strong>Aplica al mecanismo de no causación</strong><p>Pieza comercial que explica cómo las empresas pueden compensar hasta el 50 % de sus emisiones gravadas con el impuesto al carbono.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/cneutral/cn-webinar-poster.webp" width="720" height="1280" style="--ar:720/1280" aria-label="Invitación a webinar"><source src="assets/cneutral/cn-webinar.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Reel · 0:28</span><strong>Invitación a webinar</strong><p>Video con el CEO de la empresa invitando a un webinar con un invitado externo, con fecha y subtítulos.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="educativo">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-cop16-conservacion.webp" data-texto="La conservación de la biodiversidad" aria-label="Ampliar: La conservación de la biodiversidad"><img src="assets/cneutral/cn-cop16-conservacion.webp" alt="Pieza de C-Neutral con dos guacamayos y el texto La conservación de la biodiversidad asegura el acceso a agua limpia y alimentos" loading="lazy" width="1400" height="1400"></button>
+        <figcaption><span class="pastilla">Post 1:1</span><strong>La conservación de la biodiversidad</strong><p>Mensaje de marca durante la COP16 sobre la relación entre biodiversidad, agua y alimentos.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="eventos">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-cimnav-2024.webp" data-texto="CIMNAV 2024 con la Armada de Colombia" aria-label="Ampliar: CIMNAV 2024 con la Armada de Colombia"><img src="assets/cneutral/cn-cimnav-2024.webp" alt="Pieza de C-Neutral sobre el congreso CIMNAV 2024, con oficiales de la Armada en un auditorio y fotos de buques" loading="lazy" width="1400" height="1400"></button>
+        <figcaption><span class="pastilla">Post 1:1</span><strong>CIMNAV 2024 con la Armada de Colombia</strong><p>Anuncio de la participación en el XIV Congreso Internacional de Ingeniería y Mantenimiento Naval, 12 y 13 de septiembre de 2024.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/cneutral/cn-cimnav-armada-poster.webp" width="1280" height="720" style="--ar:1280/720" aria-label="Cubrimiento CIMNAV 2024"><source src="assets/cneutral/cn-cimnav-armada.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Video 16:9 · 1:16</span><strong>Cubrimiento CIMNAV 2024</strong><p>Video horizontal del congreso con testimonios de la Armada y del CEO sobre la gestión sostenible del evento.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="eventos">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-cop16-agroimpulso.webp" data-texto="COP16: alianza con Agroimpulso" aria-label="Ampliar: COP16: alianza con Agroimpulso"><img src="assets/cneutral/cn-cop16-agroimpulso.webp" alt="Historia de C-Neutral en la COP16 con una foto de dos mujeres en un stand de la Fundación Agroimpulso" loading="lazy" width="788" height="1400"></button>
+        <figcaption><span class="pastilla">Historia 9:16</span><strong>COP16: alianza con Agroimpulso</strong><p>Historia sobre el reencuentro con aliados durante la COP16.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="educativo">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-cop29.webp" data-texto="COP29: un paso histórico" aria-label="Ampliar: COP29: un paso histórico"><img src="assets/cneutral/cn-cop29.webp" alt="Pieza de C-Neutral sobre la COP29 con una fotografía enmarcada de un hombre sentado en suelo seco" loading="lazy" width="1400" height="1400"></button>
+        <figcaption><span class="pastilla">Post 1:1</span><strong>COP29: un paso histórico</strong><p>Contenido de actualidad sobre el acuerdo de la COP29 para un mercado mundial de certificados de carbono.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/cneutral/cn-mecanismo-reel-poster.webp" width="720" height="1280" style="--ar:720/1280" aria-label="Reel: beneficios tributarios"><source src="assets/cneutral/cn-mecanismo-reel.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Reel · 0:36</span><strong>Reel: beneficios tributarios</strong><p>Reel educativo sobre el Decreto 926 de 2017, los certificados de carbono y la reducción de costos para las empresas.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="eventos">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-foro-andeg.webp" data-texto="11.° Foro Energético ANDEG" aria-label="Ampliar: 11.° Foro Energético ANDEG"><img src="assets/cneutral/cn-foro-andeg.webp" alt="Pieza de C-Neutral con el texto Te contamos sobre el 11 Foro Energético ANDEG y dos fotos circulares del evento" loading="lazy" width="1400" height="1400"></button>
+        <figcaption><span class="pastilla">Post 1:1</span><strong>11.° Foro Energético ANDEG</strong><p>Resumen del primer día de participación en el foro, con fotos del evento.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="educativo">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-conoce-mecanismo.webp" data-texto="Conoce el mecanismo de no causación" aria-label="Ampliar: Conoce el mecanismo de no causación"><img src="assets/cneutral/cn-conoce-mecanismo.webp" alt="Pieza de C-Neutral titulada Conoce el mecanismo de no causación del impuesto al carbono, con una plántula y un globo de cristal" loading="lazy" width="1400" height="1400"></button>
+        <figcaption><span class="pastilla">Post 1:1</span><strong>Conoce el mecanismo de no causación</strong><p>Explicación del mecanismo reglamentado por el Decreto 926 de 2017.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/cneutral/cn-cop16-historia-pacifico-poster.webp" width="720" height="1280" style="--ar:720/1280" aria-label="COP16: zona del Pacífico"><source src="assets/cneutral/cn-cop16-historia-pacifico.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Historia · 0:17</span><strong>COP16: zona del Pacífico</strong><p>Historia del cuarto día de la COP16 sobre las iniciativas de las comunidades del Pacífico.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="eventos">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-cop16-zona-verde.webp" data-texto="COP16: Zona Verde y cultura" aria-label="Ampliar: COP16: Zona Verde y cultura"><img src="assets/cneutral/cn-cop16-zona-verde.webp" alt="Pieza de C-Neutral titulada Zona Verde y cultura, con un panel de conversación y un tucán en primer plano" loading="lazy" width="1400" height="1400"></button>
+        <figcaption><span class="pastilla">Portada de carrusel 1:1</span><strong>COP16: Zona Verde y cultura</strong><p>Cubrimiento de la apertura de la Zona Verde de la COP16.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/cneutral/cn-escuelas-sostenibles-poster.webp" width="720" height="1280" style="--ar:720/1280" aria-label="Escuelas Sostenibles"><source src="assets/cneutral/cn-escuelas-sostenibles.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Video vertical · 2:22</span><strong>Escuelas Sostenibles</strong><p>Video de cubrimiento del proyecto en una institución educativa, con vocera, trabajos de estudiantes y entrega de certificado.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="educativo">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-justicia-ambiental.webp" data-texto="Sostenibilidad y justicia ambiental" aria-label="Ampliar: Sostenibilidad y justicia ambiental"><img src="assets/cneutral/cn-justicia-ambiental.webp" alt="Pieza de C-Neutral con dos abejarucos sobre una rama y el texto En C-Neutral estamos comprometidos con la sostenibilidad y la justicia ambiental" loading="lazy" width="1400" height="1400"></button>
+        <figcaption><span class="pastilla">Post 1:1</span><strong>Sostenibilidad y justicia ambiental</strong><p>Pieza de marca con llamado a contacto.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/cneutral/cn-bosque-naturgas-poster.webp" width="720" height="1018" style="--ar:720/1018" aria-label="Informe Bosque Naturgas 2024"><source src="assets/cneutral/cn-bosque-naturgas.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Informe animado · 0:19</span><strong>Informe Bosque Naturgas 2024</strong><p>Entregable animado para el cliente con árboles sembrados por año, especies y ubicación del bosque.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="eventos">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-andesco-2026-flyer.webp" data-texto="28.° Congreso ANDESCO 2026" aria-label="Ampliar: 28.° Congreso ANDESCO 2026"><img src="assets/cneutral/cn-andesco-2026-flyer.webp" alt="Pieza del 28 Congreso ANDESCO 2026 con una vista de Cartagena y cuatro íconos del proceso de huella de carbono" loading="lazy" width="1080" height="1350"></button>
+        <figcaption><span class="pastilla">Post 4:5</span><strong>28.° Congreso ANDESCO 2026</strong><p>Pieza sobre la medición y compensación de la huella de carbono del congreso: medimos, reducimos, compensamos y transformamos.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="video">
+        <video controls preload="none" playsinline poster="assets/cneutral/cn-cop16-historia-casa-britanica-poster.webp" width="720" height="1280" style="--ar:720/1280" aria-label="COP16: Casa Británica"><source src="assets/cneutral/cn-cop16-historia-casa-britanica.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Historias · 0:46</span><strong>COP16: Casa Británica</strong><p>Historias desde la Casa Británica sobre prácticas regenerativas en agricultura, turismo y economía.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="eventos">
+        <button class="ampliar" type="button" data-src="assets/cneutral/cn-andesco-2026-banner.webp" data-texto="ANDESCO 2026: el futuro se mide" aria-label="Ampliar: ANDESCO 2026: el futuro se mide"><img src="assets/cneutral/cn-andesco-2026-banner.webp" alt="Banner horizontal del 28 Congreso ANDESCO 2026 con el texto El futuro no solo se construye, se mide y una vista de Cartagena" loading="lazy" width="1400" height="788"></button>
+        <figcaption><span class="pastilla">Banner 16:9</span><strong>ANDESCO 2026: el futuro se mide</strong><p>Banner horizontal para el congreso con el mensaje de medición de huella.</p></figcaption>
+      </figure>
+    </div>
+    <p class="pendientes-linea"><span class="pendiente" data-pendiente="cneutral-estadisticas">Pendiente: captura de estadísticas de la cuenta con el periodo visible</span></p>
+  </section>
+  <a class="btn volver" href="#proyectos"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Volver a proyectos</a>
+</article>
+
+<!-- ============ CASO 03 · NAMI ============ -->
+<article class="caso vidrio caso-nami" id="caso-nami" aria-labelledby="nami-titulo">
+  <header class="caso-cab">
+    <div>
+      <span class="etiqueta">Caso 03 · Creación de contenido</span>
+      <h2 class="caso-titulo nami-titulo" id="nami-titulo">Nami en <span class="bn b">Blanco</span> y <span class="bn n">Negro</span></h2>
+      <p class="caso-sub">Un personaje con voz propia: una gata tuxedo de pelo largo que cuenta su vida en primera persona.</p>
+    </div>
+    <div class="caso-estados"><span class="estado propio"><i aria-hidden="true"></i>Proyecto propio</span><span class="estado implementado"><i aria-hidden="true"></i>Publicado</span></div>
+  </header>
+  <div class="caso-cuerpo">
+    <aside class="ficha" aria-label="Ficha del proyecto">
+      <dl>
+        <div><dt>Tipo</dt><dd>Marca de contenido propia</dd></div>
+        <div><dt>Mi rol</dt><dd>Concepto, estrategia, guion, grabación, edición y publicación</dd></div>
+        <div><dt>Inicio</dt><dd>31 de mayo de 2026</dd></div>
+        <div><dt>Personalidad</dt><dd>Juguetona, afectuosa, reconocible</dd></div>
+        <div><dt>Plataformas</dt><dd>Instagram, TikTok, YouTube</dd></div>
+      </dl>
+    </aside>
+    <div class="relato">
+      <section class="bloque">
+        <h3>Concepto</h3>
+        <p class="destacado">Nami no es la mascota de una cuenta. Es la narradora.</p>
+        <p style="margin-top:14px">El proyecto construye una marca alrededor de Nami, una gata tuxedo de pelo largo. Todo el contenido se cuenta desde su voz, en primera persona, lo que da una personalidad constante a cada video aunque cambie el formato o la plataforma. El blanco y negro de su pelaje es también la base de la identidad visual.</p>
+      </section>
+      <section class="bloque">
+        <h3>Proceso de producción</h3>
+        <ol class="proceso-nami">
+          <li>Concepto y personaje</li><li>Identidad visual</li><li>Planificación editorial</li><li>Guion en voz de Nami</li><li>Grabación</li><li>Edición y ritmo</li><li>Publicación por canal</li>
+        </ol>
+      </section>
+      <section class="bloque">
+        <h3>Lo que demuestra</h3>
+        <ul class="aportes">
+          <li>Desarrollo de concepto y personaje</li><li>Exploración de identidad visual en tres estilos</li><li>Storytelling en primera persona</li><li>Escritura de guiones</li><li>Edición audiovisual y ritmo narrativo</li><li>Consistencia de marca entre piezas</li><li>Adaptación del personaje a cada plataforma</li>
+        </ul>
+      </section>
+      <section class="bloque">
+        <h3>Canales</h3>
+        <div class="canales">
+          <a class="canal" href="https://www.instagram.com/soy_michi_nami/" target="_blank" rel="noopener"><b>Instagram</b><span>@soy_michi_nami ↗</span></a>
+          <a class="canal" href="https://www.tiktok.com/@soy_michi_nami" target="_blank" rel="noopener"><b>TikTok</b><span>@soy_michi_nami ↗</span></a>
+          <a class="canal" href="https://youtube.com/@soy_michi_nami" target="_blank" rel="noopener"><b>YouTube</b><span>@soy_michi_nami ↗</span></a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <section class="muestras" aria-labelledby="nami-identidad">
+    <h3 class="nami-sub" id="nami-identidad">Identidad visual</h3>
+    <p class="nami-intro">Exploración de logotipo en tres estilos, cada uno pensado para un uso: redes sociales, YouTube y branding, y un tono tierno para conectar con todas las edades.</p>
+    <div class="identidad">
+      <figure class="pieza">
+        <button class="ampliar" type="button" data-src="assets/nami/nami-logo-propuestas.webp" data-texto="Tres direcciones de logo" aria-label="Ampliar: Tres direcciones de logo"><img src="assets/nami/nami-logo-propuestas.webp" alt="Lámina con tres propuestas de logo de Nami en Blanco y Negro: estilo TikTok sobre fondo negro, premium sobre fondo crema y kawaii sobre fondo rosado" loading="lazy" width="1254" height="1254"></button>
+        <figcaption><span class="pastilla">Lámina de propuestas</span><strong>Tres direcciones de logo</strong><p>Estilo TikTok, premium y kawaii, con los criterios de uso de cada uno.</p></figcaption>
+      </figure>
+      <div class="logos">
+      <figure class="pieza">
+        <button class="ampliar" type="button" data-src="assets/nami/nami-logo-neon.webp" data-texto="Estilo TikTok" aria-label="Ampliar: Estilo TikTok"><img src="assets/nami/nami-logo-neon.webp" alt="Logo de Nami en estilo neón sobre fondo oscuro" loading="lazy" width="933" height="1400"></button>
+        <figcaption><span class="pastilla">Redes</span><strong>Estilo TikTok</strong><p>Fondo oscuro con brillos y burbuja de corazón.</p></figcaption>
+      </figure>
+      <figure class="pieza">
+        <button class="ampliar" type="button" data-src="assets/nami/nami-logo-premium.webp" data-texto="Estilo premium" aria-label="Ampliar: Estilo premium"><img src="assets/nami/nami-logo-premium.webp" alt="Logo de Nami en estilo premium con marco dorado" loading="lazy" width="933" height="1400"></button>
+        <figcaption><span class="pastilla">YouTube</span><strong>Estilo premium</strong><p>Retrato con marco dorado y tipografía serif.</p></figcaption>
+      </figure>
+      <figure class="pieza">
+        <button class="ampliar" type="button" data-src="assets/nami/nami-logo-kawaii.webp" data-texto="Estilo kawaii" aria-label="Ampliar: Estilo kawaii"><img src="assets/nami/nami-logo-kawaii.webp" alt="Logo de Nami en estilo kawaii con detalles rosados" loading="lazy" width="933" height="1400"></button>
+        <figcaption><span class="pastilla">Tierno</span><strong>Estilo kawaii</strong><p>Patitas, corazones y borde punteado rosa.</p></figcaption>
+      </figure>
+      </div>
+    </div>
+  </section>
+  <section class="muestras" aria-labelledby="nami-videos">
+    <h3 class="nami-sub" id="nami-videos">Videos</h3>
+    <p class="nami-intro">Historias narradas por Nami en primera persona, con subtítulos dinámicos palabra por palabra y el logo como sello en cada pieza.</p>
+    <div class="nami-videos">
+      <figure class="pieza">
+        <video controls preload="none" playsinline poster="assets/nami/nami-mi-historia-poster.webp" width="720" height="1280" aria-label="Mi historia"><source src="assets/nami/nami-mi-historia.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Video · 0:54</span><strong>Mi historia</strong><p>Nami se presenta y cuenta cómo llegó a su familia.</p></figcaption>
+      </figure>
+      <figure class="pieza">
+        <video controls preload="none" playsinline poster="assets/nami/nami-adopcion-poster.webp" width="720" height="1280" aria-label="Cómo me adoptaron"><source src="assets/nami/nami-adopcion.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Video · 0:52</span><strong>Cómo me adoptaron</strong><p>El proceso de adopción contado desde su mirada, con tomas en casa y en la calle.</p></figcaption>
+      </figure>
+      <figure class="pieza">
+        <video controls preload="none" playsinline poster="assets/nami/nami-por-que-me-cuidas-poster.webp" width="720" height="1280" aria-label="¿Por qué me cuidas tanto?"><source src="assets/nami/nami-por-que-me-cuidas.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Video · 0:17</span><strong>¿Por qué me cuidas tanto?</strong><p>Pieza corta y emotiva en formato de diálogo entre Nami y su dueña.</p></figcaption>
+      </figure>
+      <figure class="pieza">
+        <video controls preload="none" playsinline poster="assets/nami/nami-personalidad-poster.webp" width="720" height="1280" aria-label="Mi personalidad"><source src="assets/nami/nami-personalidad.mp4" type="video/mp4"></video>
+        <figcaption><span class="pastilla">Video · 0:37</span><strong>Mi personalidad</strong><p>Nami muestra sus costumbres y travesuras por la casa.</p></figcaption>
+      </figure>
+    </div>
+  </section>
+  <a class="btn volver" href="#proyectos"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Volver a proyectos</a>
+</article>
+
+<!-- ============ CASO 04 · RIOBITA ============ -->
+<article class="caso vidrio" id="caso-riobita" aria-labelledby="riobita-titulo">
+  <header class="caso-cab">
+    <div>
+      <span class="etiqueta">Caso 04 · Creación de marca</span>
+      <h2 class="caso-titulo" id="riobita-titulo">RioBita</h2>
+      <p class="caso-sub">Una marca creada desde cero que lleva el río Bita, su biodiversidad y su ancestralidad a una línea de productos del Vichada.</p>
+    </div>
+    <div class="caso-estados"><span class="estado creacion"><i aria-hidden="true"></i>Creación de marca</span></div>
+  </header>
+  <div class="caso-cuerpo">
+    <aside class="ficha" aria-label="Ficha del proyecto">
+      <dl>
+        <div><dt>Mi rol</dt><dd>Creadora de la marca</dd></div>
+        <div><dt>Periodo</dt><dd>Ago 2024 – Nov 2025</dd></div>
+        <div><dt>Organización</dt><dd>Del mismo propietario de IFCAYA</dd></div>
+        <div><dt>Territorio</dt><dd>Vichada · Puerto Carreño</dd></div>
+        <div><dt>Entregables</dt><dd>Manual de marca de 14 páginas, sistema de logotipos, paleta, tipografía, ilustraciones y etiquetas de producto</dd></div>
+        <div><dt>Enlaces</dt><dd><a href="https://www.ifcaya.com.co/riobita/" target="_blank" rel="noopener">Página de RioBita <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" stroke="currentColor" stroke-width="1.4"/></svg></a></dd></div>
+      </dl>
+    </aside>
+    <div class="relato">
+      <section class="bloque">
+        <h3>Contexto</h3>
+        <p>RioBita toma su nombre del río Bita, afluente del Orinoco que recorre el Vichada hasta Puerto Carreño. Su cuenca fue declarada humedal Ramsar en 2018, el sitio Ramsar más grande de Colombia. La marca se inspira en ese río, en la biodiversidad de su cuenca y en la ancestralidad del territorio.</p>
+        <p>Hice toda la creación de la marca, desde el concepto hasta el manual y las etiquetas. Su promesa es «Origen que se saborea»: productos naturales con identidad territorial, elaborados con prácticas sostenibles que apoyan a las comunidades locales. La línea incluye:</p>
+        <div class="productos"><span class="producto">Miel de abejas</span><span class="producto">Marañón tostado</span><span class="producto">Mantequilla de marañón</span><span class="producto">Vino de miel</span><span class="producto">Vino de marañón</span></div>
+      </section>
+      <section class="bloque">
+        <h3>Estado de cada pieza</h3>
+        <div class="tabla-estado">
+          <table>
+            <thead><tr><th scope="col">Pieza</th><th scope="col">Estado</th></tr></thead>
+            <tbody>
+              <tr><td>Manual de marca</td><td>Creado</td></tr>
+              <tr><td>Sistema de logotipos</td><td>Creado</td></tr>
+              <tr><td>Etiqueta de miel de abejas</td><td>Cinco opciones de formato · <span class="pendiente" data-pendiente="estado-miel">indicar si alguna se aprobó o imprimió</span></td></tr>
+              <tr><td>Etiqueta de cuñete de miel (27 kg)</td><td><span class="pendiente" data-pendiente="estado-cunete">Propuesta o implementada</span></td></tr>
+              <tr><td>Etiquetas de vino de miel y de marañón</td><td><span class="pendiente" data-pendiente="estado-vinos">Propuesta o implementada</span></td></tr>
+              <tr><td>Etiqueta de mantequilla de marañón</td><td><span class="pendiente" data-pendiente="estado-mantequilla">Propuesta o implementada</span></td></tr>
+              <tr><td>Empaques y aplicaciones digitales del manual</td><td>Prototipos de visualización</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="bloque">
+        <h3>Decisiones de diseño</h3>
+        <ul class="decisiones">
+          <li><strong>Un símbolo hecho del territorio.</strong> El isotipo reúne el río, un árbol, el jaguar, el venado y la palma de moriche, elementos que evocan el paisaje del Vichada.</li>
+          <li><strong>El producto dentro del nombre.</strong> En el logotipo, una gota de miel cae sobre la «o» y un fruto de marañón corona la «i».</li>
+          <li><strong>Un sistema para cada tamaño.</strong> Imagotipo para etiquetas principales, logotipo para piezas digitales, isotipo para tapas y empaques pequeños, e isologo como sello de autenticidad.</li>
+          <li><strong>Tipografía con carácter artesanal.</strong> Playfair Display para encabezados y Montserrat para textos.</li>
+          <li><strong>Ilustraciones propias.</strong> Abeja, marañón, flores de acacia, venado, jaguar y miel, con trazos orgánicos para fondos y empaques.</li>
+        </ul>
+        <h4 class="paleta-tit">Paleta tomada del territorio</h4>
+        <ul class="paleta"><li><span class="sw" style="background:#D68F2B" aria-hidden="true"></span><b>Ámbar miel</b><code>#D68F2B</code><small>Dulzura y sol</small></li><li><span class="sw" style="background:#3B5E44" aria-hidden="true"></span><b>Verde morichal</b><code>#3B5E44</code><small>Vegetación viva</small></li><li><span class="sw" style="background:#4EB9AE" aria-hidden="true"></span><b>Turquesa agua</b><code>#4EB9AE</code><small>Claridad del río</small></li><li><span class="sw" style="background:#A15134" aria-hidden="true"></span><b>Tierra rojiza</b><code>#A15134</code><small>Suelo de sabana</small></li><li><span class="sw" style="background:#7E5C3C" aria-hidden="true"></span><b>Café nuez</b><code>#7E5C3C</code><small>Semilla tostada</small></li><li><span class="sw" style="background:#6C2F32" aria-hidden="true"></span><b>Vino de marañón</b><code>#6C2F32</code><small>Elegante y frutal</small></li><li><span class="sw" style="background:#C7A763" aria-hidden="true"></span><b>Dorado selva</b><code>#C7A763</code><small>Sol sobre la vegetación</small></li><li><span class="sw" style="background:#A5A5A5" aria-hidden="true"></span><b>Gris piedra</b><code>#A5A5A5</code><small>Neutral y sobrio</small></li><li><span class="sw" style="background:#3A2C25" aria-hidden="true"></span><b>Ébano vegetal</b><code>#3A2C25</code><small>Contraste oscuro</small></li></ul>
+      </section>
+    </div>
+  </div>
+  <section class="muestras" aria-labelledby="rb-logos">
+    <div class="muestras-cab"><div><h3 id="rb-logos">Sistema de logotipos</h3><p>Cuatro versiones para cada uso y tres versiones monocromáticas aprobadas en el manual.</p></div></div>
+    <div class="logos-rb">
+      <figure class="pieza pieza-logo" data-tipo="logo">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-imagotipo-transparente.webp" data-texto="Imagotipo oficial" aria-label="Ampliar: Imagotipo oficial"><img src="assets/riobita/rb-imagotipo-transparente.webp" alt="Imagotipo oficial de RioBita" loading="lazy" width="489" height="632"></button>
+        <figcaption><span class="pastilla">Logo</span><strong>Imagotipo oficial</strong><p>Versión principal a color, para etiquetas y piezas institucionales.</p></figcaption>
+      </figure>
+      <figure class="pieza pieza-logo" data-tipo="logo">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-logotipo.webp" data-texto="Logotipo" aria-label="Ampliar: Logotipo"><img src="assets/riobita/rb-logotipo.webp" alt="Logotipo de RioBita" loading="lazy" width="647" height="216"></button>
+        <figcaption><span class="pastilla">Logo</span><strong>Logotipo</strong><p>Solo el nombre, con la gota de miel y el marañón. Para redes y piezas digitales.</p></figcaption>
+      </figure>
+      <figure class="pieza pieza-logo" data-tipo="logo">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-isotipo.webp" data-texto="Isotipo" aria-label="Ampliar: Isotipo"><img src="assets/riobita/rb-isotipo.webp" alt="Isotipo de RioBita" loading="lazy" width="442" height="475"></button>
+        <figcaption><span class="pastilla">Logo</span><strong>Isotipo</strong><p>El paisaje sin texto, para tapas, íconos y empaques pequeños.</p></figcaption>
+      </figure>
+      <figure class="pieza pieza-logo" data-tipo="logo">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-isologo.webp" data-texto="Isologo" aria-label="Ampliar: Isologo"><img src="assets/riobita/rb-isologo.webp" alt="Isologo de RioBita" loading="lazy" width="443" height="475"></button>
+        <figcaption><span class="pastilla">Logo</span><strong>Isologo</strong><p>Versión circular que funciona como sello de autenticidad.</p></figcaption>
+      </figure>
+      <figure class="pieza pieza-logo" data-tipo="logo">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-mono-verde.webp" data-texto="Verde bosque" aria-label="Ampliar: Verde bosque"><img src="assets/riobita/rb-mono-verde.webp" alt="Verde bosque de RioBita" loading="lazy" width="489" height="632"></button>
+        <figcaption><span class="pastilla">Logo</span><strong>Verde bosque</strong><p>Versión monocromática para uso institucional o ecológico.</p></figcaption>
+      </figure>
+      <figure class="pieza pieza-logo" data-tipo="logo">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-mono-ambar.webp" data-texto="Ámbar miel" aria-label="Ampliar: Ámbar miel"><img src="assets/riobita/rb-mono-ambar.webp" alt="Ámbar miel de RioBita" loading="lazy" width="489" height="632"></button>
+        <figcaption><span class="pastilla">Logo</span><strong>Ámbar miel</strong><p>Versión monocromática para la línea de miel.</p></figcaption>
+      </figure>
+      <figure class="pieza pieza-logo" data-tipo="logo">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-mono-negro.webp" data-texto="Blanco y negro" aria-label="Ampliar: Blanco y negro"><img src="assets/riobita/rb-mono-negro.webp" alt="Blanco y negro de RioBita" loading="lazy" width="489" height="632"></button>
+        <figcaption><span class="pastilla">Logo</span><strong>Blanco y negro</strong><p>Versión neutra para alto contraste.</p></figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="muestras" aria-labelledby="rb-manual">
+    <div class="muestras-cab"><div><h3 id="rb-manual">Manual de marca</h3><p>Las 14 páginas del manual. Desliza para recorrerlo y toca una página para verla en grande. Los empaques y fotografías de producto que aparecen son prototipos de visualización, como lo indica el propio manual.</p></div></div>
+    <ol class="manual-tira">
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-01.webp" data-texto="Manual de marca · 1. Portada" aria-label="Ampliar página 1: Portada"><img src="assets/riobita/rb-manual-01.webp" alt="Página 1 del manual de marca de RioBita: Portada" loading="lazy" width="1440" height="810"></button><span><b>01</b> Portada</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-02.webp" data-texto="Manual de marca · 2. Guía del contenido" aria-label="Ampliar página 2: Guía del contenido"><img src="assets/riobita/rb-manual-02.webp" alt="Página 2 del manual de marca de RioBita: Guía del contenido" loading="lazy" width="1440" height="810"></button><span><b>02</b> Guía del contenido</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-03.webp" data-texto="Manual de marca · 3. Historia, valores y valor agregado" aria-label="Ampliar página 3: Historia, valores y valor agregado"><img src="assets/riobita/rb-manual-03.webp" alt="Página 3 del manual de marca de RioBita: Historia, valores y valor agregado" loading="lazy" width="1440" height="810"></button><span><b>03</b> Historia, valores y valor agregado</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-04.webp" data-texto="Manual de marca · 4. Logotipos" aria-label="Ampliar página 4: Logotipos"><img src="assets/riobita/rb-manual-04.webp" alt="Página 4 del manual de marca de RioBita: Logotipos" loading="lazy" width="1440" height="810"></button><span><b>04</b> Logotipos</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-05.webp" data-texto="Manual de marca · 5. Positivo, negativo y usos permitidos" aria-label="Ampliar página 5: Positivo, negativo y usos permitidos"><img src="assets/riobita/rb-manual-05.webp" alt="Página 5 del manual de marca de RioBita: Positivo, negativo y usos permitidos" loading="lazy" width="1440" height="810"></button><span><b>05</b> Positivo, negativo y usos permitidos</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-06.webp" data-texto="Manual de marca · 6. Usos no permitidos" aria-label="Ampliar página 6: Usos no permitidos"><img src="assets/riobita/rb-manual-06.webp" alt="Página 6 del manual de marca de RioBita: Usos no permitidos" loading="lazy" width="1440" height="810"></button><span><b>06</b> Usos no permitidos</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-07.webp" data-texto="Manual de marca · 7. Paleta de colores" aria-label="Ampliar página 7: Paleta de colores"><img src="assets/riobita/rb-manual-07.webp" alt="Página 7 del manual de marca de RioBita: Paleta de colores" loading="lazy" width="1440" height="810"></button><span><b>07</b> Paleta de colores</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-08.webp" data-texto="Manual de marca · 8. Fuentes" aria-label="Ampliar página 8: Fuentes"><img src="assets/riobita/rb-manual-08.webp" alt="Página 8 del manual de marca de RioBita: Fuentes" loading="lazy" width="1440" height="810"></button><span><b>08</b> Fuentes</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-09.webp" data-texto="Manual de marca · 9. Elementos e ilustraciones" aria-label="Ampliar página 9: Elementos e ilustraciones"><img src="assets/riobita/rb-manual-09.webp" alt="Página 9 del manual de marca de RioBita: Elementos e ilustraciones" loading="lazy" width="1440" height="810"></button><span><b>09</b> Elementos e ilustraciones</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-10.webp" data-texto="Manual de marca · 10. Fotografía de producto" aria-label="Ampliar página 10: Fotografía de producto"><img src="assets/riobita/rb-manual-10.webp" alt="Página 10 del manual de marca de RioBita: Fotografía de producto" loading="lazy" width="1440" height="810"></button><span><b>10</b> Fotografía de producto</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-11.webp" data-texto="Manual de marca · 11. Prototipos de impresión y digitales" aria-label="Ampliar página 11: Prototipos de impresión y digitales"><img src="assets/riobita/rb-manual-11.webp" alt="Página 11 del manual de marca de RioBita: Prototipos de impresión y digitales" loading="lazy" width="1440" height="810"></button><span><b>11</b> Prototipos de impresión y digitales</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-12.webp" data-texto="Manual de marca · 12. Aplicaciones de marca" aria-label="Ampliar página 12: Aplicaciones de marca"><img src="assets/riobita/rb-manual-12.webp" alt="Página 12 del manual de marca de RioBita: Aplicaciones de marca" loading="lazy" width="1440" height="810"></button><span><b>12</b> Aplicaciones de marca</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-13.webp" data-texto="Manual de marca · 13. Responsabilidad y sostenibilidad" aria-label="Ampliar página 13: Responsabilidad y sostenibilidad"><img src="assets/riobita/rb-manual-13.webp" alt="Página 13 del manual de marca de RioBita: Responsabilidad y sostenibilidad" loading="lazy" width="1440" height="810"></button><span><b>13</b> Responsabilidad y sostenibilidad</span></li>
+        <li><button class="ampliar" type="button" data-src="assets/riobita/rb-manual-14.webp" data-texto="Manual de marca · 14. Información de contacto" aria-label="Ampliar página 14: Información de contacto"><img src="assets/riobita/rb-manual-14.webp" alt="Página 14 del manual de marca de RioBita: Información de contacto" loading="lazy" width="1440" height="810"></button><span><b>14</b> Información de contacto</span></li>
+    </ol>
+  </section>
+  <section class="muestras" aria-labelledby="rb-etiquetas">
+    <div class="muestras-cab">
+      <div><h3 id="rb-etiquetas">Etiquetas de producto</h3><p>Artes de etiqueta para cada línea. La miel se trabajó en cinco opciones de formato.</p></div>
+      <div class="filtros" role="group" aria-label="Filtrar etiquetas">
+        <button class="filtro" type="button" data-filtro="todo" aria-pressed="true">Todo<span>13</span></button>
+        <button class="filtro" type="button" data-filtro="miel" aria-pressed="false">Miel<span>6</span></button>
+        <button class="filtro" type="button" data-filtro="vino" aria-pressed="false">Vinos<span>4</span></button>
+        <button class="filtro" type="button" data-filtro="maranon" aria-pressed="false">Marañón<span>3</span></button>
+      </div>
+    </div>
+    <div class="muestras-grid">
+      <figure class="pieza" data-tipo="miel">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-miel-forma-grande.webp" data-texto="Forma original grande" aria-label="Ampliar: Forma original grande"><img src="assets/riobita/rb-miel-forma-grande.webp" alt="Etiqueta de RioBita: Forma original grande" loading="lazy" width="1113" height="873"></button>
+        <figcaption><span class="pastilla">Miel · opción</span><strong>Forma original grande</strong><p>Etiqueta troquelada con el arco del isotipo y su collarín.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="miel">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-miel-rectangular.webp" data-texto="Rectangular fondo dorado" aria-label="Ampliar: Rectangular fondo dorado"><img src="assets/riobita/rb-miel-rectangular.webp" alt="Etiqueta de RioBita: Rectangular fondo dorado" loading="lazy" width="1171" height="784"></button>
+        <figcaption><span class="pastilla">Miel · opción</span><strong>Rectangular fondo dorado</strong><p>Formato envolvente con información legal y de origen.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="miel">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-miel-forma-pequena.webp" data-texto="Forma original pequeña" aria-label="Ampliar: Forma original pequeña"><img src="assets/riobita/rb-miel-forma-pequena.webp" alt="Etiqueta de RioBita: Forma original pequeña" loading="lazy" width="1055" height="629"></button>
+        <figcaption><span class="pastilla">Miel · opción</span><strong>Forma original pequeña</strong><p>Versión reducida para frascos de menor capacidad.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="miel">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-miel-vertical.webp" data-texto="Vertical" aria-label="Ampliar: Vertical"><img src="assets/riobita/rb-miel-vertical.webp" alt="Etiqueta de RioBita: Vertical" loading="lazy" width="823" height="765"></button>
+        <figcaption><span class="pastilla">Miel · opción</span><strong>Vertical</strong><p>Frente y reverso en formato vertical.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="miel">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-miel-transparente.webp" data-texto="Horizontal fondo transparente" aria-label="Ampliar: Horizontal fondo transparente"><img src="assets/riobita/rb-miel-transparente.webp" alt="Etiqueta de RioBita: Horizontal fondo transparente" loading="lazy" width="1297" height="743"></button>
+        <figcaption><span class="pastilla">Miel · opción</span><strong>Horizontal fondo transparente</strong><p>Pensada para vinilo transparente sobre el frasco.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="miel">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-miel-cunete.webp" data-texto="Cuñete de 27 kg" aria-label="Ampliar: Cuñete de 27 kg"><img src="assets/riobita/rb-miel-cunete.webp" alt="Etiqueta de RioBita: Cuñete de 27 kg" loading="lazy" width="1300" height="867"></button>
+        <figcaption><span class="pastilla">Miel · granel</span><strong>Cuñete de 27 kg</strong><p>Etiqueta para presentación a granel.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="vino">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-vino-miel-frente.webp" data-texto="Vino de miel" aria-label="Ampliar: Vino de miel"><img src="assets/riobita/rb-vino-miel-frente.webp" alt="Etiqueta de RioBita: Vino de miel" loading="lazy" width="1052" height="1182"></button>
+        <figcaption><span class="pastilla">Vino · frente</span><strong>Vino de miel</strong><p>Fermentado artesanal de miel multifloral y marañón.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="vino">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-vino-miel-reverso.webp" data-texto="Vino de miel: contraetiqueta" aria-label="Ampliar: Vino de miel: contraetiqueta"><img src="assets/riobita/rb-vino-miel-reverso.webp" alt="Etiqueta de RioBita: Vino de miel: contraetiqueta" loading="lazy" width="1052" height="1182"></button>
+        <figcaption><span class="pastilla">Vino · reverso</span><strong>Vino de miel: contraetiqueta</strong><p>Historia, ingredientes, datos legales y lote.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="vino">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-vino-maranon-frente.webp" data-texto="Vino de marañón" aria-label="Ampliar: Vino de marañón"><img src="assets/riobita/rb-vino-maranon-frente.webp" alt="Etiqueta de RioBita: Vino de marañón" loading="lazy" width="1052" height="1182"></button>
+        <figcaption><span class="pastilla">Vino · frente</span><strong>Vino de marañón</strong><p>Misma familia gráfica con su propia denominación.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="vino">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-vino-maranon-reverso.webp" data-texto="Vino de marañón: contraetiqueta" aria-label="Ampliar: Vino de marañón: contraetiqueta"><img src="assets/riobita/rb-vino-maranon-reverso.webp" alt="Etiqueta de RioBita: Vino de marañón: contraetiqueta" loading="lazy" width="1052" height="1182"></button>
+        <figcaption><span class="pastilla">Vino · reverso</span><strong>Vino de marañón: contraetiqueta</strong><p>Información del producto y del productor.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="maranon">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-mantequilla-frente.webp" data-texto="Mantequilla de marañón" aria-label="Ampliar: Mantequilla de marañón"><img src="assets/riobita/rb-mantequilla-frente.webp" alt="Etiqueta de RioBita: Mantequilla de marañón" loading="lazy" width="1032" height="1400"></button>
+        <figcaption><span class="pastilla">Marañón · frente</span><strong>Mantequilla de marañón</strong><p>Ilustración del fruto como protagonista.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="maranon">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-mantequilla-reverso.webp" data-texto="Mantequilla de marañón: reverso" aria-label="Ampliar: Mantequilla de marañón: reverso"><img src="assets/riobita/rb-mantequilla-reverso.webp" alt="Etiqueta de RioBita: Mantequilla de marañón: reverso" loading="lazy" width="1032" height="1400"></button>
+        <figcaption><span class="pastilla">Marañón · reverso</span><strong>Mantequilla de marañón: reverso</strong><p>Texto de marca, usos sugeridos y datos legales.</p></figcaption>
+      </figure>
+      <figure class="pieza" data-tipo="maranon">
+        <button class="ampliar" type="button" data-src="assets/riobita/rb-mantequilla-collarin.webp" data-texto="Collarín para frasco" aria-label="Ampliar: Collarín para frasco"><img src="assets/riobita/rb-mantequilla-collarin.webp" alt="Etiqueta de RioBita: Collarín para frasco" loading="lazy" width="672" height="1040"></button>
+        <figcaption><span class="pastilla">Marañón · collarín</span><strong>Collarín para frasco</strong><p>Pieza de cuello con el isotipo.</p></figcaption>
+      </figure>
+    </div>
+  </section>
+  <a class="btn volver" href="#proyectos"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Volver a proyectos</a>
+</article>
+
+<!-- ============ LOGROS ============ -->
+<section class="panel vidrio" aria-labelledby="logros-titulo">
+  <div class="logros-grid">
+    <div>
+      <h2 class="titulo-seccion" id="logros-titulo">Logros e impacto <svg class="chispa" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c.6 4.4 3.6 7.4 8 8-4.4.6-7.4 3.6-8 8-.6-4.4-3.6-7.4-8-8 4.4-.6 7.4-3.6 8-8z" fill="currentColor"/></svg></h2>
+      <p class="sub" style="margin-top:10px">Resultados reportados en mi hoja de vida.</p>
+    </div>
+    <div class="cifras">
+      <div class="cifra"><span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M18 8v6M15 11h6"/></svg></span><b>+80 %</b><span>Seguidores<br>C-Neutral</span></div>
+      <div class="cifra"><span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18l5-6 4 3 7-9"/><path d="M15 6h5v5"/></svg></span><b>+90 %</b><span>Alcance<br>C-Neutral</span></div>
+      <div class="cifra"><span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg></span><b>+1.000</b><span>Clientes atendidos<br>UNIMINUTO</span></div>
+      <div class="cifra"><span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></span><b>2</b><span>Sitios web creados<br>o liderados</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAYECTORIA ============ -->
+<section class="panel vidrio" id="trayectoria" aria-labelledby="tray-titulo">
+  <div class="panel-cab">
+    <h2 class="titulo-seccion" id="tray-titulo">Experiencia y formación <svg class="chispa" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c.6 4.4 3.6 7.4 8 8-4.4.6-7.4 3.6-8 8-.6-4.4-3.6-7.4-8-8 4.4-.6 7.4-3.6 8-8z" fill="currentColor"/></svg></h2>
+    <p class="sub">Logros y cifras reportados en mi hoja de vida.</p>
+  </div>
+
+  <h3 class="tray-sub primero">Experiencia profesional</h3>
+  <div class="linea-tiempo">
+    <article class="hito">
+      <span class="cuando-izq">Nov 2025 – Ene 2026</span>
+      <div><h4>Coordinadora de Mercadeo y Contenidos Estratégicos</h4><p class="org">Centro Comercial MiCentro El Porvenir</p>
+        <ul class="logros"><li>Ejecución y supervisión de campañas comerciales y eventos: cronogramas, logística, personal de apoyo y proveedores.</li><li>Gestión de proveedores, patrocinios, canjes y alianzas; comunicados para locatarios y áreas administrativas.</li><li>Aseguré la ejecución de la campaña de diciembre coordinando equipo, proveedores y locatarios.</li></ul></div>
+      <span class="modalidad"></span>
+    </article>
+    <article class="hito">
+      <span class="cuando-izq">Ago 2024 – Nov 2025</span>
+      <div><h4>Coordinadora de Marketing y Ventas</h4><p class="org">IFCAYA</p>
+        <ul class="logros"><li>Desarrollé desde cero el sitio web corporativo y los canales digitales.</li><li>Gestioné campañas de Google Ads y Meta Ads para reconocimiento y generación de leads.</li><li>Creé la marca RioBita para el mismo propietario.</li><li><a href="#caso-ifcaya">Ver caso IFCAYA</a> · <a href="#caso-riobita">Ver caso RioBita</a></li></ul></div>
+      <span class="modalidad"></span>
+    </article>
+    <article class="hito">
+      <span class="cuando-izq">Jul 2024 – Mar 2025</span>
+      <div><h4>Coordinadora de Marketing y Ventas</h4><p class="org">C-Neutral</p>
+        <ul class="logros"><li>+80 % en captación de seguidores y +90 % en alcance de publicaciones.</li><li>Crecimiento en leads de calidad con campañas de servicios estratégicos.</li><li><a href="#caso-cneutral">Ver caso</a></li></ul></div>
+      <span class="modalidad"></span>
+    </article>
+    <article class="hito">
+      <span class="cuando-izq">Feb 2024 – May 2024</span>
+      <div><h4>Community Manager Senior</h4><p class="org">Agrocampo S.A.S.</p>
+        <ul class="logros"><li>Estrategia de contenidos y redes de tres cuentas del grupo empresarial.</li><li>+90 % en captación de seguidores y alcance; +80 % en alcance de campañas pagas en Meta y TikTok.</li><li>Propuesta de servicio al cliente posventa con manual de procesos para cerca de 10 asesores.</li></ul></div>
+      <span class="modalidad"><span class="pastilla">Freelance</span></span>
+    </article>
+    <article class="hito">
+      <span class="cuando-izq">Jul 2023 – Ene 2024</span>
+      <div><h4>Comunicadora</h4><p class="org">Hacienda El Cucharo S.A.S.</p>
+        <ul class="logros"><li>Lideré la creación de la página web, entregada a tiempo y dentro del presupuesto.</li><li>+40 % en participación y tráfico con contenido audiovisual.</li><li>+20 % en la gestión con clientes y 10 % de ahorro en costos con proveedores.</li></ul></div>
+      <span class="modalidad"></span>
+    </article>
+    <article class="hito">
+      <span class="cuando-izq">Dic 2022 – Jun 2023</span>
+      <div><h4>Coordinadora de Contenido</h4><p class="org">Dávila Peña y CIA LTDA. · Travelers Apartamentos y Suites</p>
+        <ul class="logros"><li>Contenido audiovisual para redes, OTAs y sitio web, y notas sobre los destinos.</li><li>+50 % en producción audiovisual, con +20 % en engagement.</li></ul></div>
+      <span class="modalidad"></span>
+    </article>
+    <article class="hito">
+      <span class="cuando-izq">Jul 2022 – Sep 2022</span>
+      <div><h4>Community Manager</h4><p class="org">PubliciTV</p>
+        <ul class="logros"><li>Parrillas y administración de cinco cuentas; pauta en LinkedIn Ads y Google Ads.</li><li>Cronogramas que redujeron tiempos en 50 %; +20 % en captación de leads.</li></ul></div>
+      <span class="modalidad"><span class="pastilla">Freelance</span></span>
+    </article>
+    <article class="hito">
+      <span class="cuando-izq">Feb 2022 – May 2022</span>
+      <div><h4>Asistente de Mercadeo</h4><p class="org">SCN S.A.S.</p>
+        <ul class="logros"><li>Reactivación de redes, piezas gráficas, parrillas y email marketing.</li><li>Engagement 1,5 veces mayor; +10 % en leads con inbound marketing.</li></ul></div>
+      <span class="modalidad"><span class="pastilla">Freelance</span></span>
+    </article>
+    <article class="hito">
+      <span class="cuando-izq">May 2021 – Feb 2022</span>
+      <div><h4>Agente de Gestión de Experiencia al Cliente</h4><p class="org">UNIMINUTO</p>
+        <ul class="logros"><li>Atención a más de 1.000 clientes por chat, email y redes; apoyo en pauta de Google Ads.</li><li>Cerca de 50 leads por temporada y +50 % en conversión, con reconocimiento por el resultado.</li></ul></div>
+      <span class="modalidad"></span>
+    </article>
+  </div>
+
+  <h3 class="tray-sub">Educación y formación complementaria</h3>
+  <div class="linea-tiempo">
+    <div class="hito"><span class="cuando-izq">Feb 2016 – Oct 2021</span><div><h4>Profesional en Comunicación Social y Periodismo</h4><p class="org">Corporación Universitaria Minuto de Dios – UNIMINUTO</p></div><span class="modalidad"><span class="pastilla">Pregrado</span></span></div>
+    <div class="hito"><span class="cuando-izq">Oct 2026</span><div><h4>Power BI para la gestión administrativa</h4><p class="org">UCompensar · Certificado</p></div><span class="modalidad"><span class="pastilla">Curso</span></span></div>
+    <div class="hito"><span class="cuando-izq">Ago 2026 – Sep 2026</span><div><h4>Diplomado en Gerencia de Marketing</h4><p class="org">Politécnico de Colombia</p></div><span class="modalidad"><span class="pastilla">Diplomado</span></span></div>
+    <div class="hito"><span class="cuando-izq">Ago 2026</span><div><h4>Marketing Digital Estratégico</h4><p class="org">Educación Futuro · 40 horas</p></div><span class="modalidad"><span class="pastilla">Curso</span></span></div>
+    <div class="hito"><span class="cuando-izq">May 2024</span><div><h4>Pensamiento Estratégico · Fidelización de Clientes · Atención al Cliente</h4><p class="org">Platzi</p></div><span class="modalidad"><span class="pastilla">Cursos</span></span></div>
+    <div class="hito"><span class="cuando-izq">Ago 2020 – Nov 2020</span><div><h4>Diplomado en Periodismo</h4><p class="org">UNIMINUTO</p></div><span class="modalidad"><span class="pastilla">Diplomado</span></span></div>
+  </div>
+
+  <div class="hv-caja">
+    <p>Consulta la hoja de vida completa en PDF.</p>
+    <a class="btn btn-lleno" id="btn-hv" href="hoja-de-vida-laura-camila-yepes.pdf" download="Hoja de vida - Laura Camila Yepes.pdf">Descargar hoja de vida <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v9M4 7l4 4 4-4M3 14h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <span class="hv-estado" id="hv-estado" role="status" aria-live="polite"></span>
+  </div>
+</section>
+
+<!-- ============ HERRAMIENTAS ============ -->
+<section class="panel vidrio" id="herramientas" aria-labelledby="herr-titulo">
+  <div class="panel-cab"><h2 class="titulo-seccion" id="herr-titulo">Herramientas <svg class="chispa" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c.6 4.4 3.6 7.4 8 8-4.4.6-7.4 3.6-8 8-.6-4.4-3.6-7.4-8-8 4.4-.6 7.4-3.6 8-8z" fill="currentColor"/></svg></h2></div>
+  <div class="herr-grid">
+    <div class="herr"><h4>Pauta</h4><ul><li>Google Ads</li><li>Meta Ads</li><li>LinkedIn Ads</li><li>TikTok Ads</li></ul></div>
+    <div class="herr"><h4>Analítica</h4><ul><li>Google Analytics</li><li>Excel <small>intermedio</small></li><li>Power BI <small>certificado</small></li></ul></div>
+    <div class="herr"><h4>CRM y email</h4><ul><li>HubSpot CRM</li><li>Mailchimp</li><li>Brevo</li></ul></div>
+    <div class="herr"><h4>Sitios web</h4><ul><li>WordPress + Elementor</li><li>Wix</li></ul></div>
+    <div class="herr"><h4>Diseño y video</h4><ul><li>Photoshop</li><li>Illustrator</li><li>InDesign</li><li>Premiere Pro</li><li>Audition</li><li>Canva</li><li>CapCut</li></ul></div>
+    <div class="herr"><h4>IA para creación</h4><ul><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Grok</li><li>Nano Banana</li><li>ElevenLabs</li><li>Meta AI</li><li>Canva AI</li><li>CapCut AI</li></ul></div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="panel vidrio" id="contacto" aria-labelledby="contacto-titulo">
+  <div class="contacto-grid">
+    <div class="contacto-intro">
+      <div>
+        <h2 id="contacto-titulo">Creemos algo<br>que funcione</h2>
+        <p style="margin-top:10px">Escríbeme para hablar de estrategia digital, contenidos, pauta, sitios web o creación de marca.</p>
+      </div>
+      <a class="btn btn-lleno" href="https://www.linkedin.com/in/camila-yepes-marketingdigital/" target="_blank" rel="noopener">Hablemos por LinkedIn <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="datos">
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><span class="etiqueta">Correo</span><span class="valor">lauracamila221@hotmail.com</span></div><button class="copiar" type="button" data-copiar="lauracamila221@hotmail.com" aria-label="Copiar correo">Copiar</button></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1z"/></svg><div><span class="etiqueta">Teléfono</span><span class="valor">+57 322 363 5552</span></div><button class="copiar" type="button" data-copiar="+573223635552" aria-label="Copiar teléfono">Copiar</button></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><span class="etiqueta">Ubicación</span><span class="valor" style="user-select:auto;-webkit-user-select:auto">Bogotá, Colombia</span></div><span></span></li>
+      </ul>
+      <div class="sello" aria-hidden="true">LY</div>
+    </div>
+    <div class="redes">
+      <h3>Redes</h3>
+      <a class="red" href="https://www.linkedin.com/in/camila-yepes-marketingdigital/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.3-.02-3-1.83-3-1.84 0-2.12 1.43-2.12 2.9V21H9z"/></svg>camila-yepes-marketingdigital</a>
+      <a class="red" href="#caso-nami"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg>Nami en Blanco y Negro</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<dialog class="visor" id="visor" aria-label="Pieza ampliada">
+  <div class="visor-caja">
+    <img id="visor-img" src="" alt="">
+    <p id="visor-texto"></p>
+    <button class="visor-cerrar" id="visor-cerrar" type="button" aria-label="Cerrar">×</button>
+  </div>
+</dialog>
+
+<footer class="pie wrap">
+  <nav aria-label="Navegación del pie">
+    <a href="#perfil">Perfil</a><a href="#proyectos">Proyectos</a><a href="#trayectoria">Trayectoria</a><a href="#contacto">Contacto</a>
+  </nav>
+  <p>© 2026 Laura Camila Yepes Gutiérrez · Gracias por tu visita</p>
+</footer>
+
+<script>
+(function(){
+  // Menú móvil
+  var cab = document.getElementById('cabecera');
+  var btn = document.getElementById('menu-btn');
+  var nav = document.getElementById('nav-principal');
+  function cerrar(){ cab.classList.remove('abierta'); btn.setAttribute('aria-expanded','false'); btn.textContent = 'Menú'; }
+  btn.addEventListener('click', function(){
+    var abierto = cab.classList.toggle('abierta');
+    btn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+    btn.textContent = abierto ? 'Cerrar' : 'Menú';
+  });
+  nav.addEventListener('click', function(e){ if (e.target.closest('a') && cab.classList.contains('abierta')) cerrar(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && cab.classList.contains('abierta')) { cerrar(); btn.focus(); } });
+
+  // Sección activa
+  var enlaces = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]:not(.nav-cta)'));
+  var mapa = {perfil:'perfil',capacidades:'capacidades',proyectos:'proyectos','caso-ifcaya':'proyectos','caso-cneutral':'proyectos','caso-nami':'proyectos','caso-riobita':'proyectos',trayectoria:'trayectoria',herramientas:'herramientas'};
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(en){
+        if (!en.isIntersecting) return;
+        var clave = mapa[en.target.id];
+        enlaces.forEach(function(a){
+          var on = clave && a.getAttribute('href') === '#' + clave;
+          a.classList.toggle('activo', !!on);
+          if (on) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current');
+        });
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(mapa).forEach(function(id){ var el = document.getElementById(id); if (el) obs.observe(el); });
+  }
+
+  // Copiar datos de contacto
+  document.querySelectorAll('.copiar').forEach(function(b){
+    b.addEventListener('click', function(){
+      var valor = b.getAttribute('data-copiar');
+      var listo = function(){ b.textContent = 'Copiado'; b.classList.add('hecho'); setTimeout(function(){ b.textContent = 'Copiar'; b.classList.remove('hecho'); }, 1800); };
+      var respaldo = function(){
+        var el = b.parentElement.querySelector('.valor'); if (!el) return;
+        var r = document.createRange(); r.selectNodeContents(el);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        b.textContent = 'Seleccionado'; setTimeout(function(){ b.textContent = 'Copiar'; }, 1800);
+      };
+      try { if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(valor).then(listo, respaldo); else respaldo(); } catch (e) { respaldo(); }
+    });
+  });
+
+  // Descarga de la hoja de vida: dentro de Claude usa el permiso de descargas; fuera, el enlace normal
+  var hv = document.getElementById('btn-hv');
+  var hvEstado = document.getElementById('hv-estado');
+  if (hv && window.claude && typeof window.claude.use === 'function') {
+    hv.addEventListener('click', function(e){
+      e.preventDefault();
+      hvEstado.textContent = 'Preparando el archivo…';
+      var fallo = function(){ hvEstado.textContent = 'No se pudo descargar aquí. Escríbeme y te envío el PDF.'; };
+      Promise.resolve(window.claude.use('downloads')).then(function(dl){
+        if (!dl) { hvEstado.textContent = 'La descarga no está disponible en esta vista. Escríbeme y te envío el PDF.'; return; }
+        return fetch(hv.getAttribute('href')).then(function(r){ if (!r.ok) throw new Error('fetch'); return r.blob(); })
+          .then(function(blob){ return dl.save({filename:'Hoja de vida - Laura Camila Yepes.pdf', data: blob}); })
+          .then(function(){ hvEstado.textContent = ''; }, function(err){ if (err && err.code === 'declined') hvEstado.textContent = ''; else fallo(); });
+      }).catch(fallo);
+    });
+  }
+
+  // Filtros de muestras
+  document.querySelectorAll('.muestras').forEach(function(sec){
+    var botones = sec.querySelectorAll('.filtro');
+    botones.forEach(function(b){
+      b.addEventListener('click', function(){
+        var f = b.getAttribute('data-filtro');
+        botones.forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        sec.querySelectorAll('.pieza').forEach(function(p){ p.hidden = !(f === 'todo' || p.getAttribute('data-tipo') === f); });
+      });
+    });
+  });
+
+  // Solo un video a la vez
+  document.querySelectorAll('.pieza video').forEach(function(v){
+    v.addEventListener('play', function(){ document.querySelectorAll('.pieza video').forEach(function(o){ if (o !== v) o.pause(); }); });
+  });
+
+  // Visor de imágenes
+  var visor = document.getElementById('visor');
+  var vImg = document.getElementById('visor-img');
+  var vTxt = document.getElementById('visor-texto');
+  var ultimo = null;
+  function cerrarVisor(){ if (visor.open) visor.close(); }
+  document.querySelectorAll('.ampliar').forEach(function(b){
+    b.addEventListener('click', function(){
+      var img = b.querySelector('img');
+      vImg.src = b.getAttribute('data-src'); vImg.alt = img ? img.alt : '';
+      vTxt.textContent = b.getAttribute('data-texto') || '';
+      ultimo = b;
+      if (typeof visor.showModal === 'function') visor.showModal(); else visor.setAttribute('open','');
+    });
+  });
+  document.getElementById('visor-cerrar').addEventListener('click', cerrarVisor);
+  visor.addEventListener('click', function(e){ if (e.target === visor) cerrarVisor(); });
+  visor.addEventListener('close', function(){ if (ultimo) ultimo.focus(); });
+
+  if (location.hash) {
+    var destino = document.getElementById(location.hash.slice(1));
+    if (destino) setTimeout(function(){ destino.scrollIntoView(); }, 50);
+  }
+})();
+</script>
+
+</body>
+</html>
